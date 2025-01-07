@@ -13,7 +13,7 @@ from django.urls import path
 from django.urls import path, include, re_path
 
 from .views import (rate_limiter_view, view_404, 
-                        handler_403, home_view) #subscribe_view
+                        handler_403, home_view, landing_view) #subscribe_view
 
 from .sitemaps import StaticSitemap
 from blog.sitemaps import BlogSitemap
@@ -44,6 +44,7 @@ urlpatterns = [
     path('ratelimit-error/', rate_limiter_view, name='ratelimit-error'),
 
     # add new path here
+    path('landing/', landing_view, name='landing'),
 
     path('', home_view, name='home'),
 
