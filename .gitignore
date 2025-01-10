@@ -6,6 +6,7 @@ firebase-cred.json
 encoded.txt
 .venv/
 *venv/
+*node_modules/
 
 # Created by https://www.toptal.com/developers/gitignore/api/django,python,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=django,python,visualstudiocode
