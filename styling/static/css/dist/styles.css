@@ -808,6 +808,10 @@ video {
   height: 12rem;
 }
 
+.tw-h-16{
+  height: 4rem;
+}
+
 .tw-max-h-\[150px\]{
   max-height: 150px;
 }
@@ -887,6 +891,10 @@ video {
 
 .tw-w-48{
   width: 12rem;
+}
+
+.tw-w-16{
+  width: 4rem;
 }
 
 .tw-min-w-\[10\%\]{
@@ -1062,6 +1070,10 @@ video {
 
 .tw-rounded-xl{
   border-radius: 0.75rem;
+}
+
+.tw-rounded-2xl{
+  border-radius: 1rem;
 }
 
 .tw-border-0{
