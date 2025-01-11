@@ -15,6 +15,10 @@ html {
     font-family: "Quicksand", sans-serif;
 }
 
+.fancy-font{
+    font-family: 'Ephesis', sans-serif;
+}
+
 header{
     background-color: #fff;
     color: #000;

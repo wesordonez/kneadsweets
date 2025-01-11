@@ -53,6 +53,9 @@ module.exports = {
             fontFamily: {
                 sans: ['Quicksand', 'sans-serif'],
             },
+            colors: {
+                ksBackground: '#efecec',
+            },
         },
     },
     plugins: [
