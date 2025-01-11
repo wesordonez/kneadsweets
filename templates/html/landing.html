@@ -67,32 +67,89 @@
 
 </head>
 <body>
-    <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-min-h-screen tw-bg-gray-100">
-        <!-- Gallery Item -->
-        <div class="tw-relative tw-w-full tw-max-w-md">
-          <!-- Image -->
-          <img src="{% static './assets/images/landing/ks-cakes.jpg' %}" 
-                                alt="dashboard" class="tw-w-screen tw-h-screen tw-object-cover">
-          <!-- Text Section -->
-          <div class="tw-absolute tw-top-10 tw-left-1/2 tw-transform tw--translate-x-1/2 tw-text-center">
-            <h1 class="tw-text-4xl tw-font-semibold">KNEAD SWEETS</h1>
-            <p class="tw-text-lg tw-tracking-wide tw-text-gray-500 tw-mt-2">CHICAGO</p>
-          </div>
-          <!-- Button -->
-          <div class="tw-absolute tw-bottom-10 tw-left-1/2 tw-transform tw--translate-x-1/2">
-            <button class="tw-px-6 tw-py-3 tw-text-lg tw-font-semibold tw-text-white tw-bg-black tw-rounded-full tw-shadow-lg hover:tw-bg-gray-800">
-              ORDER NOW!
-            </button>
-          </div>
+    <section id="landing-gallery">
+        <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-min-h-screen tw-bg-gray-100">
+            <!-- Gallery Item -->
+            <div class="tw-relative tw-w-full tw-max-w-md">
+            <!-- Image -->
+            <img src="{% static './assets/images/landing/ks-cakes.jpg' %}" 
+                                    alt="dashboard" class="tw-w-screen tw-h-screen tw-object-cover">
+            <!-- Text Section -->
+            <div class="tw-absolute tw-top-10 tw-left-1/2 tw-transform tw--translate-x-1/2 tw-text-center">
+                <h1 class="tw-text-4xl tw-font-semibold">KNEAD SWEETS</h1>
+                <p class="tw-text-lg tw-tracking-wide tw-text-gray-500 tw-mt-2">CHICAGO</p>
+            </div>
+            <!-- Button -->
+            <div class="tw-absolute tw-bottom-10 tw-left-1/2 tw-transform tw--translate-x-1/2">
+                <button class="tw-px-6 tw-py-3 tw-text-lg tw-font-semibold tw-text-white tw-bg-black tw-rounded-full tw-shadow-lg hover:tw-bg-gray-800">
+                ORDER NOW!
+                </button>
+            </div>
+            </div>
+        
+            <!-- Scroll Bar -->
+            <div class="tw-w-full tw-max-w-md tw-mt-5">
+            <div class="tw-h-2 tw-bg-gray-200 tw-rounded-full tw-overflow-hidden">
+                <div class="tw-h-full tw-w-1/4 tw-bg-black"></div>
+            </div>
+            </div>
         </div>
-    
-        <!-- Scroll Bar -->
-        <div class="tw-w-full tw-max-w-md tw-mt-5">
-          <div class="tw-h-2 tw-bg-gray-200 tw-rounded-full tw-overflow-hidden">
-            <div class="tw-h-full tw-w-1/4 tw-bg-black"></div>
-          </div>
+    </section>
+
+    <section id="landing-services" class="tw-bg-black tw-text-white tw-py-10">
+        <div class="tw-container tw-mx-auto tw-px-4">
+            <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-8">
+            <div class="tw-flex tw-flex-col tw-items-center">
+                <i class="bi bi-cupcake tw-text-6xl tw-mb-4"></i>
+                <h2 class="tw-text-2xl tw-font-semibold">Custom Cakes</h2>
+                <p class="tw-text-center tw-mt-2">Delicious custom cakes for any occasion.</p>
+            </div>
+            <div class="tw-flex tw-flex-col tw-items-center">
+                <i class="bi bi-basket3 tw-text-6xl tw-mb-4"></i>
+                <h2 class="tw-text-2xl tw-font-semibold">Pastries</h2>
+                <p class="tw-text-center tw-mt-2">Freshly baked pastries made daily.</p>
+            </div>
+            <div class="tw-flex tw-flex-col tw-items-center">
+                <i class="bi bi-emoji-smile tw-text-6xl tw-mb-4"></i>
+                <h2 class="tw-text-2xl tw-font-semibold">Special Orders</h2>
+                <p class="tw-text-center tw-mt-2">Special orders to meet your unique needs.</p>
+            </div>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <section id="about-me" class="tw-bg-white tw-py-10">
+        <div class="tw-container tw-mx-auto tw-px-4">
+            <div class="tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-justify-center">
+                <!-- Profile Picture -->
+                <div class="tw-w-32 tw-h-32 md:tw-w-48 md:tw-h-48 tw-rounded-full tw-overflow-hidden tw-mb-4 md:tw-mb-0 md:tw-mr-8">
+                    <img src="{% static './assets/images/profile/profile-picture.jpg' %}" alt="Profile Picture" class="tw-w-full tw-h-full tw-object-cover">
+                </div>
+                <!-- About Me Text -->
+                <div class="tw-text-center md:tw-text-left">
+                    <h2 class="tw-text-3xl tw-font-semibold">About Me</h2>
+                    <p class="tw-mt-2">I am a Chicago-based cake and pastry chef with a passion for creating delicious and beautiful desserts. With years of experience and a love for baking, I strive to bring joy to every occasion with my custom cakes, pastries, and special orders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="call-to-action" class="tw-bg-black tw-text-white tw-py-10">
+        <div class="tw-container tw-mx-auto tw-my-10 tw-text-center">
+            <h2 class="tw-text-4xl tw-font-semibold">Follow Us!</h2>
+            <div class="tw-flex tw-justify-center tw-mt-4">
+                <a href="https://www.facebook.com" class="tw-mx-2">
+                    <i class="bi bi-facebook tw-text-3xl"></i>
+                </a>
+                <a href="https://www.twitter.com" class="tw-mx-2">
+                    <i class="bi bi-twitter tw-text-3xl"></i>
+                </a>
+                <a href="https://www.instagram.com" class="tw-mx-2">
+                    <i class="bi bi-instagram tw-text-3xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
