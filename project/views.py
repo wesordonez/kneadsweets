@@ -27,3 +27,7 @@ def handler_403(request, exception=None):
 
 def home_view(request):
     return render(request, 'home.html', status=200)
+
+
+def landing_view(request):
+    return render(request, 'landing.html', status=200)

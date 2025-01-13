@@ -12,7 +12,11 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: "Roboto", sans-serif;
+    font-family: "Quicksand", sans-serif;
+}
+
+.fancy-font{
+    font-family: 'Ephesis', sans-serif;
 }
 
 header{

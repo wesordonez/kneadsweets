@@ -49,7 +49,14 @@ module.exports = {
         // '../../**/*.py'
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                sans: ['Quicksand', 'sans-serif'],
+            },
+            colors: {
+                ksBackground: '#efecec',
+            },
+        },
     },
     plugins: [
         /**

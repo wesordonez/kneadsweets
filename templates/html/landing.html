@@ -1,0 +1,163 @@
+{% load static %}
+{% load static tailwind_tags %}
+
+{% load custom_tags%}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="{% static 'assets/logos/kneadsweets-logo.png' %}" type="image/png">
+    
+    <meta name="theme-color" content="#efecec">
+
+    <title>{% block title %}{% endblock title %} {% settings_value "PROJECT_TITLE" %}</title>
+    <meta name="description" 
+            content="{% block description %}Chicago-based cake and pastry chef{% endblock description %}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="{% block socialTitle %}{% endblock socialTitle %} Project" />
+    <meta property="og:description" 
+                        content="{% block socialDescription %}Description Here{% endblock socialDescription %}" />
+    <meta property="og:type" content="{% block pageType %}website{% endblock pageType %}" />
+    <meta property="og:url" content="{% block pageLink %}{{request.build_absolute_uri}}{% endblock pageLink %}" />
+    <meta property="og:image" content="{% block pageImage %}{{ request.scheme }}://{{request.get_host}}{% static "./assets/images/home/hiking4.jpg" %}{% endblock pageImage %}" />
+
+    <!-- Twitter -->
+    {% comment %} 
+    `some of the meta tags specific to twitter has been dropped in favor of OG tags, Since twitter also supports OG tags as fallback
+    https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started
+    {% endcomment %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@">
+    {% comment %} <meta name="twitter:title" content="{% block twitterTitle %}Project{% endblock twitterTitle %}">
+    <meta name="twitter:description" content="{% block twitterDescription %}Description Here{% endblock socialDescription %}"> {% endcomment %}
+    {% comment %} <meta name="twitter:image" content="{% block pageImage %}http://www.example.com/image.jpg{% endblock pageImage %}"> {% endcomment %}
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    {% tailwind_css %}
+    <link rel="stylesheet" href="{% static "./css/index.css" %}">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={% settings_value "ANALYTICS_TAG_ID" %}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{% settings_value "ANALYTICS_TAG_ID" %}');
+    </script>
+
+    {% block head_tags %}
+    {% endblock head_tags %}
+
+</head>
+<body>
+    <section id="landing-gallery">
+        <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-min-h-screen tw-bg-gray-100">
+            <!-- Gallery Item -->
+            <div class="tw-relative tw-w-full tw-max-w-md">
+            <!-- Image -->
+            <img src="{% static './assets/images/landing/ks-cakes.jpg' %}" 
+                                    alt="dashboard" class="tw-w-screen tw-h-screen tw-object-cover">
+            <!-- Text Section -->
+            <div class="tw-absolute tw-top-10 tw-left-1/2 tw-transform tw--translate-x-1/2 tw-text-center">
+                <h1 class="tw-text-4xl tw-font-semibold">KNEAD SWEETS</h1>
+                <p class="tw-text-lg tw-tracking-wide tw-text-gray-500 tw-mt-2">CHICAGO</p>
+            </div>
+            <!-- Button -->
+            <div class="tw-absolute tw-bottom-10 tw-left-1/2 tw-transform tw--translate-x-1/2">
+                <button class="tw-px-6 tw-py-3 tw-text-lg tw-font-semibold tw-text-white tw-bg-black tw-rounded-full tw-shadow-lg hover:tw-bg-gray-800">
+                ORDER NOW!
+                </button>
+            </div>
+            </div>
+        
+            <!-- Scroll Bar -->
+            <div class="tw-w-full tw-max-w-md tw-mt-5">
+            <div class="tw-h-2 tw-bg-gray-200 tw-rounded-full tw-overflow-hidden">
+                <div class="tw-h-full tw-w-1/4 tw-bg-black"></div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="landing-services" class="tw-bg-black tw-text-white tw-py-10">
+        <div class="tw-container tw-mx-auto tw-px-4">
+            <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-8">
+                <div class="tw-flex tw-flex-col tw-items-center">
+                    <h2 class="tw-text-4xl tw-mb-4 tw-font-semibold">Wedding Cakes</h2>
+                    <img src="{% static './assets/images/landing/ks-wedding-cakes.png' %}" alt="Wedding Cakes" class="tw-mb-4 tw-rounded-2xl">
+                    <p class="tw-text-center tw-mt-2">Elegant and custom-designed wedding cakes to make your special day unforgettable. Crafted with precision and tailored to your vision.</p>
+                </div>
+                <div class="tw-flex tw-flex-col tw-items-center">
+                    <h2 class="tw-text-4xl tw-mb-4 tw-font-semibold">Birthday Cakes</h2>
+                    <img src="{% static './assets/images/landing/ks-birthday-cakes.png' %}" alt="Pastries" class="tw-mb-4 tw-rounded-2xl">
+                    <p class="tw-text-center tw-mt-2">Celebrate every milestone with delightful, personalized birthday cakes that taste as good as they look.</p>
+                </div>
+                <div class="tw-flex tw-flex-col tw-items-center">
+                    <h2 class="tw-text-4xl tw-mb-4 tw-font-semibold">Pastries</h2>
+                    <img src="{% static './assets/images/landing/ks-pastries.png' %}" alt="Special Orders" class="tw-mb-4 tw-rounded-2xl">
+                    <p class="tw-text-center tw-mt-2">A curated selection of gourmet desserts and pastries, perfect for events, gatherings, or simply indulging in sweet moments.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-me" class="tw-bg-ksBackground tw-py-10">
+        <div class="tw-container tw-mx-auto tw-px-4">
+            <div class="tw-flex tw-flex-col tw-items-center tw-justify-center">
+                <!-- Profile Picture -->
+                <div class="tw-w-48 tw-h-48 tw-rounded-full tw-overflow-hidden tw-mb-4">
+                    <img src="{% static './assets/images/landing/ks-profile.png' %}" alt="Mayela Bezares" class="tw-w-full tw-h-full tw-object-cover">
+                </div>
+                <!-- About Me Text -->
+                <div class="tw-text-center tw-px-4">
+                    <h2 class="fancy-font tw-px-0 tw-text-4xl">Meet the Pastry Chef!</h2>
+                    <br>
+                    <p class="tw-mt-2 tw-tracking-widest">Meet Mayela, the heart and hands behind Knead Sweets.</p>
+                    <br>
+                    <p class="tw-mt-2 tw-tracking-widest">As a passionate baker with a love for creating delicious and beautiful treats, Mayela has been perfecting the art of baking for years. Inspired by family traditions and a love for sharing joy through food, she brings creativity and dedication to every recipe. Her commitment to using quality ingredients and making everything from scratch ensures that every item is as special as the moment it's made for. Whether she's experimenting with new flavors or perfecting timeless classics, Mayela is always focused on creating baked goods that bring happiness to others.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="call-to-action" class="tw-bg-black tw-text-white tw-h-[200px] tw-flex tw-items-center">
+        <div class="tw-container tw-mx-auto tw-text-center">
+            <h2 class="tw-text-4xl tw-tracking-widest tw-font-semibold tw-mb-5">Follow Us!</h2>
+            <div class="tw-flex tw-justify-center tw-my-5">
+                <a href="https://www.facebook.com/kneadsweetsbymayela" class="tw-mx-2">
+                    <i class="bi bi-facebook tw-text-3xl"></i>
+                </a>
+                <a href="https://wa.me/17874690979" class="tw-mx-2">
+                    <i class="bi bi-whatsapp tw-text-3xl"></i>
+                </a>
+                <a href="https://www.instagram.com/kneadsweetschicago" class="tw-mx-2">
+                    <i class="bi bi-instagram tw-text-3xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
