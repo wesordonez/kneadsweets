@@ -4729,6 +4729,10 @@ input[type="range"]::-ms-fill-lower{
   position:relative
 }
 
+.tw-inset-0{
+  inset:0px
+}
+
 .tw-bottom-10{
   bottom:2.5rem
 }
@@ -4785,6 +4789,18 @@ input[type="range"]::-ms-fill-lower{
   top:50%
 }
 
+.tw-bottom-20{
+  bottom:5rem
+}
+
+.tw-top-20{
+  top:5rem
+}
+
+.tw-top-1\/4{
+  top:25%
+}
+
 .tw-z-20{
   z-index:20
 }
@@ -4803,6 +4819,14 @@ input[type="range"]::-ms-fill-lower{
 
 .tw-z-\[5000\]{
   z-index:5000
+}
+
+.tw-z-0{
+  z-index:0
+}
+
+.tw-z-10{
+  z-index:10
 }
 
 .tw-m-2{
@@ -4878,6 +4902,34 @@ input[type="range"]::-ms-fill-lower{
 
 .tw-mt-auto{
   margin-top:auto
+}
+
+.tw--ml-\[25\%\]{
+  margin-left:-25%
+}
+
+.tw--mt-\[25\%\]{
+  margin-top:-25%
+}
+
+.tw--mt-\[15\%\]{
+  margin-top:-15%
+}
+
+.tw--mt-\[1\%\]{
+  margin-top:-1%
+}
+
+.tw--mt-\[-5\%\]{
+  margin-top:5%
+}
+
+.tw--mt-\[-15\%\]{
+  margin-top:15%
+}
+
+.tw-mt-\[-1\/2\]{
+  margin-top:-1/2
 }
 
 .tw-block{
@@ -4973,6 +5025,18 @@ input[type="range"]::-ms-fill-lower{
   height:100vh
 }
 
+.tw-h-\[500px\]{
+  height:500px
+}
+
+.tw-h-6{
+  height:1.5rem
+}
+
+.tw-h-auto{
+  height:auto
+}
+
 .tw-max-h-\[150px\]{
   max-height:150px
 }
@@ -4987,6 +5051,18 @@ input[type="range"]::-ms-fill-lower{
 
 .tw-max-h-\[450px\]{
   max-height:450px
+}
+
+.tw-max-h-10{
+  max-height:2.5rem
+}
+
+.tw-max-h-\[300px\]{
+  max-height:300px
+}
+
+.tw-max-h-\[100px\]{
+  max-height:100px
 }
 
 .tw-min-h-\[100vh\]{
@@ -5062,6 +5138,10 @@ input[type="range"]::-ms-fill-lower{
   width:100vw
 }
 
+.tw-w-\[150\%\]{
+  width:150%
+}
+
 .tw-min-w-\[10\%\]{
   min-width:10%
 }
@@ -5131,6 +5211,18 @@ input[type="range"]::-ms-fill-lower{
 
 .tw-translate-y-\[-50\%\]{
   --tw-translate-y:-50%;
+  transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.tw-scale-110{
+  --tw-scale-x:1.1;
+  --tw-scale-y:1.1;
+  transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.tw-scale-150{
+  --tw-scale-x:1.5;
+  --tw-scale-y:1.5;
   transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
 
@@ -5304,6 +5396,42 @@ input[type="range"]::-ms-fill-lower{
   background-color:rgb(255 255 255 / 0.3)
 }
 
+.tw-bg-white\/50{
+  background-color:rgb(255 255 255 / 0.5)
+}
+
+.tw-bg-white\/20{
+  background-color:rgb(255 255 255 / 0.2)
+}
+
+.tw-bg-gradient-to-b{
+  background-image:linear-gradient(to bottom, var(--tw-gradient-stops))
+}
+
+.tw-from-white\/20{
+  --tw-gradient-from:rgb(255 255 255 / 0.2) var(--tw-gradient-from-position);
+  --tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)
+}
+
+.tw-from-white\/50{
+  --tw-gradient-from:rgb(255 255 255 / 0.5) var(--tw-gradient-from-position);
+  --tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)
+}
+
+.tw-to-white\/50{
+  --tw-gradient-to:rgb(255 255 255 / 0.5) var(--tw-gradient-to-position)
+}
+
+.tw-to-white\/0{
+  --tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position)
+}
+
+.tw-to-white\/5{
+  --tw-gradient-to:rgb(255 255 255 / 0.05) var(--tw-gradient-to-position)
+}
+
 .tw-object-contain{
   -o-object-fit:contain;
      object-fit:contain
@@ -5336,6 +5464,14 @@ input[type="range"]::-ms-fill-lower{
 
 .tw-p-\[5\%\]{
   padding:5%
+}
+
+.tw-p-0{
+  padding:0px
+}
+
+.tw-p-8{
+  padding:2rem
 }
 
 .tw-px-0{
@@ -5530,6 +5666,24 @@ input[type="range"]::-ms-fill-lower{
 .tw-outline-none{
   outline:2px solid transparent;
   outline-offset:2px
+}
+
+.tw-backdrop-blur-md{
+  --tw-backdrop-blur:blur(12px);
+  -webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)
+}
+
+.tw-backdrop-blur-sm{
+  --tw-backdrop-blur:blur(4px);
+  -webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)
+}
+
+.tw-backdrop-blur-lg{
+  --tw-backdrop-blur:blur(16px);
+  -webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)
 }
 
 .tw-transition-colors{

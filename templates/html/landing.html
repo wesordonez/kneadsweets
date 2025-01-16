@@ -73,30 +73,41 @@
 <body>
     <section id="landing-gallery">
         <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-min-h-screen tw-bg-gray-100">
+            <!-- Text Section -->
+            <div class="tw-absolute tw-w-full tw-bg-gradient-to-b tw-from-white/50 tw-to-white/0 tw-backdrop-blur-md tw-top-0 tw-left-1/2 tw-transform tw--translate-x-1/2 tw-text-center tw-z-10">
+                <h1 class="tw-text-4xl tw-mt-5 tw-font-semibold tw-uppercase">Knead Sweets</h1>
+                <p class="tw-text-lg tw-mb-5 tw-tracking-wide tw-text-black tw-mt-2 tw-uppercase">Chicago</p>
+            </div>
+            <!-- Button -->
+            <div class="tw-absolute tw-bottom-20 tw-left-1/2 tw-transform tw--translate-x-1/2 tw-z-10">
+                <button class="tw-px-6 tw-py-3 tw-text-lg tw-font-semibold tw-text-white tw-bg-black tw-rounded-full tw-shadow-lg hover:tw-bg-gray-800">
+                ORDER NOW!
+                </button>
+            </div>
             <!-- Gallery Items -->
-            <div class="tw-relative tw-w-full tw-max-w-md">
-                <div id="default-carousel" class="tw-relative tw-w-full" data-carousel="slide">
+            <div class="tw-relative tw-w-full tw-h-screen tw-overflow-hidden tw-z-0">
+                <div id="default-carousel" class="tw-relative tw-w-full tw-h-full" data-carousel="slide">
                     <!-- Carousel wrapper -->
-                    <div class="tw-relative tw-h-56 tw-overflow-hidden tw-rounded-lg md:tw-h-96">
+                    <div class="tw-relative tw-w-full tw-h-full tw-overflow-hidden">
                          <!-- Item 1 -->
-                        <div class="tw-hidden tw-duration-700 tw-ease-in-out" data-carousel-item>
-                            <img src="{% static './assets/images/landing/ks-wedding-cakes.png' %}" class="tw-absolute tw-block tw-w-full tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                        <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                            <img src="{% static './assets/images/landing/ks-wedding-cakes.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
                         </div>
                         <!-- Item 2 -->
-                        <div class="tw-hidden tw-duration-700 tw-ease-in-out" data-carousel-item>
-                            <img src="{% static './assets/images/landing/ks-wedding-cakes.png' %}" class="tw-absolute tw-block tw-w-full tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                        <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                            <img src="{% static './assets/images/landing/ks-birthday-cakes.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
                         </div>
                         <!-- Item 3 -->
-                        <div class="tw-hidden tw-duration-700 tw-ease-in-out" data-carousel-item>
-                            <img src="{% static './assets/images/landing/ks-wedding-cakes.png' %}" class="tw-absolute tw-block tw-w-full tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                        <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                            <img src="{% static './assets/images/landing/ks-pastries.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
                         </div>
                         <!-- Item 4 -->
-                        <div class="tw-hidden tw-duration-700 tw-ease-in-out" data-carousel-item>
-                            <img src="{% static './assets/images/landing/ks-wedding-cakes.png' %}" class="tw-absolute tw-block tw-w-full tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                        <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                            <img src="{% static './assets/images/landing/ks-wedding-cakes.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
                         </div>
                         <!-- Item 5 -->
-                        <div class="tw-hidden tw-duration-700 tw-ease-in-out" data-carousel-item>
-                            <img src="{% static './assets/images/landing/ks-wedding-cakes.png' %}" class="tw-absolute tw-block tw-w-full tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                        <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                            <img src="{% static './assets/images/landing/ks-birthday-cakes.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
                         </div>
                     </div>
                     <!-- Slider indicators -->
@@ -125,24 +136,6 @@
                         </span>
                     </button>
                 </div>
-            <!-- Text Section -->
-            <div class="tw-absolute tw-top-10 tw-left-1/2 tw-transform tw--translate-x-1/2 tw-text-center">
-                <h1 class="tw-text-4xl tw-font-semibold">KNEAD SWEETS</h1>
-                <p class="tw-text-lg tw-tracking-wide tw-text-gray-500 tw-mt-2">CHICAGO</p>
-            </div>
-            <!-- Button -->
-            <div class="tw-absolute tw-bottom-10 tw-left-1/2 tw-transform tw--translate-x-1/2">
-                <button class="tw-px-6 tw-py-3 tw-text-lg tw-font-semibold tw-text-white tw-bg-black tw-rounded-full tw-shadow-lg hover:tw-bg-gray-800">
-                ORDER NOW!
-                </button>
-            </div>
-            </div>
-        
-            <!-- Scroll Bar -->
-            <div class="tw-w-full tw-max-w-md tw-mt-5">
-            <div class="tw-h-2 tw-bg-gray-200 tw-rounded-full tw-overflow-hidden">
-                <div class="tw-h-full tw-w-1/4 tw-bg-black"></div>
-            </div>
             </div>
         </div>
     </section>
@@ -153,32 +146,35 @@
                 <div class="tw-flex tw-flex-col tw-items-center">
                     <h2 class="tw-text-4xl tw-mb-4 tw-font-semibold">Wedding Cakes</h2>
                     <img src="{% static './assets/images/landing/ks-wedding-cakes.png' %}" alt="Wedding Cakes" class="tw-mb-4 tw-rounded-2xl">
-                    <p class="tw-text-center tw-mt-2">Elegant and custom-designed wedding cakes to make your special day unforgettable. Crafted with precision and tailored to your vision.</p>
+                    <p class="tw-text-center tw-px-4 tw-mt-2">Elegant and custom-designed wedding cakes to make your special day unforgettable. Crafted with precision and tailored to your vision.</p>
                 </div>
                 <div class="tw-flex tw-flex-col tw-items-center">
                     <h2 class="tw-text-4xl tw-mb-4 tw-font-semibold">Birthday Cakes</h2>
                     <img src="{% static './assets/images/landing/ks-birthday-cakes.png' %}" alt="Pastries" class="tw-mb-4 tw-rounded-2xl">
-                    <p class="tw-text-center tw-mt-2">Celebrate every milestone with delightful, personalized birthday cakes that taste as good as they look.</p>
+                    <p class="tw-text-center tw-px-4 tw-mt-2">Celebrate every milestone with delightful, personalized birthday cakes that taste as good as they look.</p>
                 </div>
                 <div class="tw-flex tw-flex-col tw-items-center">
                     <h2 class="tw-text-4xl tw-mb-4 tw-font-semibold">Pastries</h2>
                     <img src="{% static './assets/images/landing/ks-pastries.png' %}" alt="Special Orders" class="tw-mb-4 tw-rounded-2xl">
-                    <p class="tw-text-center tw-mt-2">A curated selection of gourmet desserts and pastries, perfect for events, gatherings, or simply indulging in sweet moments.</p>
+                    <p class="tw-text-center tw-px-4 tw-mt-2">A curated selection of gourmet desserts and pastries, perfect for events, gatherings, or simply indulging in sweet moments.</p>
                 </div>
             </div>
             </div>
         </div>
     </section>
 
-    <section id="about-me" class="tw-bg-ksBackground tw-py-10">
-        <div class="tw-container tw-mx-auto tw-px-4">
+    <section id="about-me" class="tw-bg-ksBackground tw-py-10 tw-overflow-hidden tw-relative">
+        <div class="tw-absolute tw-inset-0 tw-z-0">
+            <img src="{% static './assets/images/landing/ks-doodle-bg-lg.png' %}" alt="Doodle Background" class="tw-w-full tw-h-full tw-object-cover tw-scale-150">
+        </div>
+        <div class="tw-container tw-w-full tw-mx-auto">
             <div class="tw-flex tw-flex-col tw-items-center tw-justify-center">
                 <!-- Profile Picture -->
-                <div class="tw-w-48 tw-h-48 tw-rounded-full tw-overflow-hidden tw-mb-4">
+                <div class="tw-w-48 tw-h-48 tw-rounded-full tw-overflow-hidden tw-mb-4 tw-z-10">
                     <img src="{% static './assets/images/landing/ks-profile.png' %}" alt="Mayela Bezares" class="tw-w-full tw-h-full tw-object-cover">
                 </div>
                 <!-- About Me Text -->
-                <div class="tw-text-center tw-px-4">
+                <div class="tw-bg-ksBackground tw-text-center tw-z-10 tw-p-8">
                     <h2 class="fancy-font tw-px-0 tw-text-4xl">Meet the Pastry Chef!</h2>
                     <br>
                     <p class="tw-mt-2 tw-tracking-widest">Meet Mayela, the heart and hands behind Knead Sweets.</p>
