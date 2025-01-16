@@ -73,29 +73,69 @@
 <body>
     <section id="landing-gallery">
         <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-min-h-screen tw-bg-gray-100">
-            <!-- Gallery Item -->
-            <div class="tw-relative tw-w-full tw-max-w-md">
-            <!-- Image -->
-            <img src="{% static './assets/images/landing/ks-cakes.jpg' %}" 
-                                    alt="dashboard" class="tw-w-screen tw-h-screen tw-object-cover">
             <!-- Text Section -->
-            <div class="tw-absolute tw-top-10 tw-left-1/2 tw-transform tw--translate-x-1/2 tw-text-center">
-                <h1 class="tw-text-4xl tw-font-semibold">KNEAD SWEETS</h1>
-                <p class="tw-text-lg tw-tracking-wide tw-text-gray-500 tw-mt-2">CHICAGO</p>
+            <div class="tw-absolute tw-w-full tw-bg-gradient-to-b tw-from-white/50 tw-to-white/0 tw-backdrop-blur-md tw-top-0 tw-left-1/2 tw-transform tw--translate-x-1/2 tw-text-center tw-z-10">
+                <h1 class="tw-text-4xl tw-mt-5 tw-font-semibold tw-uppercase">Knead Sweets</h1>
+                <p class="tw-text-lg tw-mb-5 tw-tracking-wide tw-text-black tw-mt-2 tw-uppercase">Chicago</p>
             </div>
             <!-- Button -->
-            <div class="tw-absolute tw-bottom-10 tw-left-1/2 tw-transform tw--translate-x-1/2">
+            <div class="tw-absolute tw-bottom-20 tw-left-1/2 tw-transform tw--translate-x-1/2 tw-z-10">
                 <button class="tw-px-6 tw-py-3 tw-text-lg tw-font-semibold tw-text-white tw-bg-black tw-rounded-full tw-shadow-lg hover:tw-bg-gray-800">
                 ORDER NOW!
                 </button>
             </div>
-            </div>
-        
-            <!-- Scroll Bar -->
-            <div class="tw-w-full tw-max-w-md tw-mt-5">
-            <div class="tw-h-2 tw-bg-gray-200 tw-rounded-full tw-overflow-hidden">
-                <div class="tw-h-full tw-w-1/4 tw-bg-black"></div>
-            </div>
+            <!-- Gallery Items -->
+            <div class="tw-relative tw-w-full tw-h-screen tw-overflow-hidden tw-z-0">
+                <div id="default-carousel" class="tw-relative tw-w-full tw-h-full" data-carousel="slide">
+                    <!-- Carousel wrapper -->
+                    <div class="tw-relative tw-w-full tw-h-full tw-overflow-hidden">
+                        <!-- Item 1 -->
+                        <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                            <img src="{% static './assets/images/landing/ks-wedding-cakes.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="..." loading="lazy">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                            <img src="{% static './assets/images/landing/ks-birthday-cakes.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="..." loading="lazy">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                            <img src="{% static './assets/images/landing/ks-pastries.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="..." loading="lazy">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                            <img src="{% static './assets/images/landing/ks-cupcakes.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="..." loading="lazy">
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                            <img src="{% static './assets/images/landing/ks-cupcakes-2.jpg' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="..." loading="lazy">
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="tw-absolute tw-z-30 tw-flex tw--translate-x-1/2 tw-bottom-5 tw-left-1/2 tw-space-x-3 rtl:tw-space-x-reverse">
+                        <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                        <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                        <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="tw-absolute tw-top-0 tw-start-0 tw-z-30 tw-flex tw-items-center tw-justify-center tw-h-full tw-px-4 tw-cursor-pointer tw-group focus:tw-outline-none" data-carousel-prev>
+                        <span class="tw-inline-flex tw-items-center tw-justify-center tw-w-10 tw-h-10 tw-rounded-full tw-bg-white/30 dark:tw-bg-gray-800/30 group-hover:tw-bg-white/50 dark:group-hover:tw-bg-gray-800/60 group-focus:tw-ring-4 group-focus:tw-ring-white dark:group-focus:tw-ring-gray-800/70 group-focus:tw-outline-none">
+                            <svg class="tw-w-4 tw-h-4 tw-text-white dark:tw-text-gray-800 rtl:tw-rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                            </svg>
+                            <span class="tw-sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="tw-absolute tw-top-0 tw-end-0 tw-z-30 tw-flex tw-items-center tw-justify-center tw-h-full tw-px-4 tw-cursor-pointer tw-group focus:tw-outline-none" data-carousel-next>
+                        <span class="tw-inline-flex tw-items-center tw-justify-center tw-w-10 tw-h-10 tw-rounded-full tw-bg-white/30 dark:tw-bg-gray-800/30 group-hover:tw-bg-white/50 dark:group-hover:tw-bg-gray-800/60 group-focus:tw-ring-4 group-focus:tw-ring-white dark:group-focus:tw-ring-gray-800/70 group-focus:tw-outline-none">
+                            <svg class="tw-w-4 tw-h-4 tw-text-white dark:tw-text-gray-800 rtl:tw-rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="tw-sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -105,33 +145,36 @@
             <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-8">
                 <div class="tw-flex tw-flex-col tw-items-center">
                     <h2 class="tw-text-4xl tw-mb-4 tw-font-semibold">Wedding Cakes</h2>
-                    <img src="{% static './assets/images/landing/ks-wedding-cakes.png' %}" alt="Wedding Cakes" class="tw-mb-4 tw-rounded-2xl">
-                    <p class="tw-text-center tw-mt-2">Elegant and custom-designed wedding cakes to make your special day unforgettable. Crafted with precision and tailored to your vision.</p>
+                    <img src="{% static './assets/images/landing/ks-wedding-cakes.png' %}" alt="Wedding Cakes" class="tw-mb-4 tw-rounded-2xl" loading="lazy">
+                    <p class="tw-text-center tw-px-4 tw-mt-2">Elegant and custom-designed wedding cakes to make your special day unforgettable. Crafted with precision and tailored to your vision.</p>
                 </div>
                 <div class="tw-flex tw-flex-col tw-items-center">
                     <h2 class="tw-text-4xl tw-mb-4 tw-font-semibold">Birthday Cakes</h2>
-                    <img src="{% static './assets/images/landing/ks-birthday-cakes.png' %}" alt="Pastries" class="tw-mb-4 tw-rounded-2xl">
-                    <p class="tw-text-center tw-mt-2">Celebrate every milestone with delightful, personalized birthday cakes that taste as good as they look.</p>
+                    <img src="{% static './assets/images/landing/ks-birthday-cakes.png' %}" alt="Pastries" class="tw-mb-4 tw-rounded-2xl" loading="lazy">
+                    <p class="tw-text-center tw-px-4 tw-mt-2">Celebrate every milestone with delightful, personalized birthday cakes that taste as good as they look.</p>
                 </div>
                 <div class="tw-flex tw-flex-col tw-items-center">
                     <h2 class="tw-text-4xl tw-mb-4 tw-font-semibold">Pastries</h2>
-                    <img src="{% static './assets/images/landing/ks-pastries.png' %}" alt="Special Orders" class="tw-mb-4 tw-rounded-2xl">
-                    <p class="tw-text-center tw-mt-2">A curated selection of gourmet desserts and pastries, perfect for events, gatherings, or simply indulging in sweet moments.</p>
+                    <img src="{% static './assets/images/landing/ks-pastries.png' %}" alt="Special Orders" class="tw-mb-4 tw-rounded-2xl" loading="lazy">
+                    <p class="tw-text-center tw-px-4 tw-mt-2">A curated selection of gourmet desserts and pastries, perfect for events, gatherings, or simply indulging in sweet moments.</p>
                 </div>
             </div>
             </div>
         </div>
     </section>
 
-    <section id="about-me" class="tw-bg-ksBackground tw-py-10">
-        <div class="tw-container tw-mx-auto tw-px-4">
+    <section id="about-me" class="tw-bg-ksBackground tw-py-10 tw-overflow-hidden tw-relative">
+        <div class="tw-absolute tw-inset-0 tw-z-0">
+            <img src="{% static './assets/images/landing/ks-doodle-bg-lg.png' %}" alt="Doodle Background" class="tw-w-full tw-h-full tw-object-cover tw-scale-150">
+        </div>
+        <div class="tw-container tw-w-full tw-mx-auto">
             <div class="tw-flex tw-flex-col tw-items-center tw-justify-center">
                 <!-- Profile Picture -->
-                <div class="tw-w-48 tw-h-48 tw-rounded-full tw-overflow-hidden tw-mb-4">
+                <div class="tw-w-48 tw-h-48 tw-rounded-full tw-overflow-hidden tw-mb-4 tw-z-10">
                     <img src="{% static './assets/images/landing/ks-profile.png' %}" alt="Mayela Bezares" class="tw-w-full tw-h-full tw-object-cover">
                 </div>
                 <!-- About Me Text -->
-                <div class="tw-text-center tw-px-4">
+                <div class="tw-bg-ksBackground tw-text-center tw-z-10 tw-p-8">
                     <h2 class="fancy-font tw-px-0 tw-text-4xl">Meet the Pastry Chef!</h2>
                     <br>
                     <p class="tw-mt-2 tw-tracking-widest">Meet Mayela, the heart and hands behind Knead Sweets.</p>
@@ -158,6 +201,6 @@
             </div>
         </div>
     </section>
-
+    <script src="{% static 'flowbite/dist/flowbite.min.js' %}"></script>
 </body>
 </html>

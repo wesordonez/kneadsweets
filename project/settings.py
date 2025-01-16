@@ -267,6 +267,7 @@ STATICFILES_DIRS = [
                         # BASE_DIR.joinpath('templates', 'js'),
                         # BASE_DIR.joinpath('templates', 'css'),
                         BASE_DIR.joinpath('templates', 'assets'),
+                        BASE_DIR.joinpath('node_modules'),
                     ]
 
 # Default primary key field type
