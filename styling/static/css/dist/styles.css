@@ -5010,6 +5010,34 @@ input[type="range"]::-ms-fill-lower{
   height:300px
 }
 
+.tw-h-\[400px\]{
+  height:400px
+}
+
+.tw-h-\[calc\(100vh-200px\)\]{
+  height:calc(100vh - 200px)
+}
+
+.tw-h-\[calc\(100vh-300px\)\]{
+  height:calc(100vh - 300px)
+}
+
+.tw-h-\[calc\(100vh-350px\)\]{
+  height:calc(100vh - 350px)
+}
+
+.tw-h-\[calc\(100vh-250px\)\]{
+  height:calc(100vh - 250px)
+}
+
+.tw-h-\[calc\(100vh-260px\)\]{
+  height:calc(100vh - 260px)
+}
+
+.tw-h-\[calc\(100vh-280px\)\]{
+  height:calc(100vh - 280px)
+}
+
 .tw-max-h-\[150px\]{
   max-height:150px
 }

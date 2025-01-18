@@ -13,7 +13,7 @@
         <p class="fancy-font tw-text-2xl tw-my-4">Where a little sweetness goes a long way</p>
     </div>
 
-    <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-h-screen">
+    <div class="tw-flex tw-flex-col tw-items-center tw-justify-center">
         <!-- Button -->
         <div class="tw-absolute tw-bottom-20 tw-left-1/2 tw-transform tw--translate-x-1/2 tw-z-10">
             <button class="tw-px-6 tw-py-3 tw-text-lg tw-font-semibold tw-text-white tw-bg-black tw-rounded-full tw-shadow-lg hover:tw-bg-gray-800">
@@ -21,56 +21,56 @@
             </button>
         </div>
         <!-- Gallery Items -->
-        <div class="tw-relative tw-w-full tw-h-full tw-px-5 tw-overflow-hidden tw-z-0">
+        <div class="tw-relative tw-w-full tw-h-[calc(100vh-280px)] tw-px-5 tw-overflow-hidden tw-z-0">
             <div id="default-carousel" class="tw-relative tw-w-full tw-h-full" data-carousel="slide">
-                <!-- Carousel wrapper -->
-                <div class="tw-relative tw-w-full tw-h-full tw-overflow-hidden tw-rounded-3xl">
-                    <!-- Item 1 -->
-                    <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
-                        <img src="{% static './assets/images/landing/ks-wedding-cakes.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
-                        <img src="{% static './assets/images/landing/ks-birthday-cakes.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
-                        <img src="{% static './assets/images/landing/ks-pastries.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
-                    </div>
-                    <!-- Item 4 -->
-                    <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
-                        <img src="{% static './assets/images/landing/ks-cupcakes.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
-                    </div>
-                    <!-- Item 5 -->
-                    <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
-                        <img src="{% static './assets/images/landing/ks-cupcakes-flower.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
-                    </div>
+            <!-- Carousel wrapper -->
+            <div class="tw-relative tw-w-full tw-h-full tw-overflow-hidden tw-rounded-3xl">
+                <!-- Item 1 -->
+                <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                <img src="{% static './assets/images/landing/ks-wedding-cakes.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
                 </div>
-                <!-- Slider indicators -->
-                <div class="tw-absolute tw-z-30 tw-flex tw--translate-x-1/2 tw-bottom-5 tw-left-1/2 tw-space-x-3 rtl:tw-space-x-reverse">
-                    <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                    <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                    <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                    <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                    <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                <!-- Item 2 -->
+                <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                <img src="{% static './assets/images/landing/ks-birthday-cakes.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
                 </div>
-                <!-- Slider controls -->
-                <button type="button" class="tw-absolute tw-top-0 tw-start-0 tw-z-30 tw-flex tw-items-center tw-justify-center tw-h-full tw-px-4 tw-cursor-pointer tw-group focus:tw-outline-none" data-carousel-prev>
-                    <span class="tw-inline-flex tw-items-center tw-justify-center tw-w-10 tw-h-10 tw-rounded-full tw-bg-white/30 dark:tw-bg-gray-800/30 group-hover:tw-bg-white/50 dark:group-hover:tw-bg-gray-800/60 group-focus:tw-ring-4 group-focus:tw-ring-white dark:group-focus:tw-ring-gray-800/70 group-focus:tw-outline-none">
-                        <svg class="tw-w-4 tw-h-4 tw-text-white dark:tw-text-gray-800 rtl:tw-rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                        </svg>
-                        <span class="tw-sr-only">Previous</span>
-                    </span>
-                </button>
-                <button type="button" class="tw-absolute tw-top-0 tw-end-0 tw-z-30 tw-flex tw-items-center tw-justify-center tw-h-full tw-px-4 tw-cursor-pointer tw-group focus:tw-outline-none" data-carousel-next>
-                    <span class="tw-inline-flex tw-items-center tw-justify-center tw-w-10 tw-h-10 tw-rounded-full tw-bg-white/30 dark:tw-bg-gray-800/30 group-hover:tw-bg-white/50 dark:group-hover:tw-bg-gray-800/60 group-focus:tw-ring-4 group-focus:tw-ring-white dark:group-focus:tw-ring-gray-800/70 group-focus:tw-outline-none">
-                        <svg class="tw-w-4 tw-h-4 tw-text-white dark:tw-text-gray-800 rtl:tw-rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                        </svg>
-                        <span class="tw-sr-only">Next</span>
-                    </span>
-                </button>
+                <!-- Item 3 -->
+                <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                <img src="{% static './assets/images/landing/ks-pastries.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                <img src="{% static './assets/images/landing/ks-cupcakes.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                <img src="{% static './assets/images/landing/ks-cupcakes-flower.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="tw-absolute tw-z-30 tw-flex tw--translate-x-1/2 tw-bottom-5 tw-left-1/2 tw-space-x-3 rtl:tw-space-x-reverse">
+                <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="tw-absolute tw-top-0 tw-start-0 tw-z-30 tw-flex tw-items-center tw-justify-center tw-h-full tw-px-4 tw-cursor-pointer tw-group focus:tw-outline-none" data-carousel-prev>
+                <span class="tw-inline-flex tw-items-center tw-justify-center tw-w-10 tw-h-10 tw-rounded-full tw-bg-white/30 dark:tw-bg-gray-800/30 group-hover:tw-bg-white/50 dark:group-hover:tw-bg-gray-800/60 group-focus:tw-ring-4 group-focus:tw-ring-white dark:group-focus:tw-ring-gray-800/70 group-focus:tw-outline-none">
+                <svg class="tw-w-4 tw-h-4 tw-text-white dark:tw-text-gray-800 rtl:tw-rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="tw-sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="tw-absolute tw-top-0 tw-end-0 tw-z-30 tw-flex tw-items-center tw-justify-center tw-h-full tw-px-4 tw-cursor-pointer tw-group focus:tw-outline-none" data-carousel-next>
+                <span class="tw-inline-flex tw-items-center tw-justify-center tw-w-10 tw-h-10 tw-rounded-full tw-bg-white/30 dark:tw-bg-gray-800/30 group-hover:tw-bg-white/50 dark:group-hover:tw-bg-gray-800/60 group-focus:tw-ring-4 group-focus:tw-ring-white dark:group-focus:tw-ring-gray-800/70 group-focus:tw-outline-none">
+                <svg class="tw-w-4 tw-h-4 tw-text-white dark:tw-text-gray-800 rtl:tw-rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="tw-sr-only">Next</span>
+                </span>
+            </button>
             </div>
         </div>
     </div>
