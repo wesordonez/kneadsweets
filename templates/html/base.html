@@ -179,49 +179,58 @@
     </div>
     <footer class="tw-flex max-md:tw-flex-col tw-w-full tw-p-[5%]
                     tw-px-[10%] tw-place-content-around tw-gap-3 
-                    tw-text-black
+                    tw-text-white tw-bg-black
                     tw-mt-auto
                     ">
         <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
                     tw-gap-6 tw-place-items-center max-md:tw-w-full">
             
-            <img src="{% static "assets/logos/logo1.png" %}" 
-                alt="logo"  class="tw-max-w-[150px] max-md:tw-max-w-[120px]">
-            <div>
-                2 Lord Edward St,   
-                <br>
-                D02 P634,
-                <br>
-                United States
+            <div class="tw-flex tw-items-center tw-gap-4">
+                <img src="{% static "assets/logos/ks-logo-white.png" %}" 
+                    alt="logo" class="tw-max-w-[120px] max-md:tw-max-w-[80px]">
+                <h1 class="tw-text-4xl tw-font-semibold max-md:tw-text-2xl">
+                    Knead Sweets
+                </h1>
             </div>
-            <div class="tw-mt-3 tw-font-semibold tw-text-lg">
-                Follow us
+            <div class="fancy-font tw-text-2xl">
+                Where a little sweetness goes a long way
             </div>
-            <div class="tw-flex tw-gap-4 tw-text-2xl">
-                <a href="https://facebook.com/" aria-label="Facebook">
+            <div class="tw-h-full tw-w-auto tw-flex tw-flex-col tw-mt-3 tw-gap-4">
+                <div class="tw-font-semibold tw-text-lg tw-text-center">
+                    Contact Us:
+                </div>
+                <div class="tw-flex tw-gap-2 max-md:tw-text-md tw-text-gray-300 tw-justify-center">
+                    <i class="bi bi-geo-alt"></i><span class="tw-ml-2">Chicago, IL</span>
+                </div>
+                <div class="tw-flex tw-gap-2 max-md:tw-text-md tw-text-gray-300 tw-justify-center">
+                    <i class="bi bi-telephone"></i><span class="tw-ml-2">+1 (787) 469-0979</span>
+                </div>
+                <div class="tw-flex tw-gap-2 max-md:tw-text-md tw-text-gray-300 tw-justify-center">
+                    <i class="bi bi-envelope"></i><span class="tw-ml-2"><a href="mailto:info@kneadsweetschicago.com">info@kneadsweetschicago.com</a></span>
+                </div>
+            </div>
+            <div class="tw-flex tw-gap-4 tw-mb-4 tw-text-3xl">
+                <a href="https://www.facebook.com/kneadsweetsbymayela" aria-label="Facebook">
                     <i class="bi bi-facebook"></i>
                 </a>
-                <a href="https://twitter.com/pauls_freeman" aria-label="Twitter">
-                    <i class="bi bi-twitter"></i>
+                <a href="https://www.instagram.com/kneadsweetschicago" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
                 </a>
-                <a href="https://instagram.com/" class="tw-w-[40px] tw-h-[40px]" aria-label="Instagram">
-                   <i class="bi bi-instagram"></i>
+                <a href="https://wa.me/17874690979" class="tw-w-[40px] tw-h-[40px]" aria-label="WhatsApp">
+                   <i class="bi bi-whatsapp"></i>
                 </a>
             </div>
         </div>
 
-        <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
+        <div class="tw-h-full tw-w-full tw-flex tw-flex-col 
                     tw-gap-4">
 
-            <h2 class="tw-text-3xl max-md:tw-text-xl">
-                Resources
-            </h2>
-            <div class=" tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                <a href="{% url "home" %}" class="footer-link">About us</a>
-                <a href="" class="footer-link">FAQ</a>
-                <a href="{% url "contact-us" %}" class="footer-link">Contact Us</a>
-                <a href="" class="footer-link">Privacy policy</a>
-            </div>
+            <p class="tw-text-sm tw-text-gray-500 tw-text-center">
+                &copy; 2025 Knead Sweets LLC. All rights reserved.
+            </p>
+            <p class='tw-text-sm tw-text-gray-500 tw-text-center'>
+                <a href="https://www.dunosis.com" class="tw-text-gray-500">Made by Dunosis</a>
+            </p>
 
         </div>
 
