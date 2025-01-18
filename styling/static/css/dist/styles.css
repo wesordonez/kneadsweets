@@ -5180,6 +5180,10 @@ input[type="range"]::-ms-fill-lower{
   grid-template-columns:repeat(1, minmax(0, 1fr))
 }
 
+.tw-flex-row{
+  flex-direction:row
+}
+
 .tw-flex-col{
   flex-direction:column
 }
