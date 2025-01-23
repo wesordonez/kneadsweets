@@ -13,7 +13,7 @@ from django.urls import path
 from django.urls import path, include, re_path
 
 from .views import (rate_limiter_view, view_404, 
-                        handler_403, home_view, landing_view) #subscribe_view
+                        handler_403, home_view, landing_view, about_view) #subscribe_view
 
 from .sitemaps import StaticSitemap
 from blog.sitemaps import BlogSitemap
@@ -47,6 +47,7 @@ urlpatterns = [
     path('landing/', landing_view, name='landing'),
 
     path('', home_view, name='home'),
+    path('about/', about_view, name='about'),
 
     path("__reload__/", include("django_browser_reload.urls")),
 ]
