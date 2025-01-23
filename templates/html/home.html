@@ -297,34 +297,7 @@
     </div>
 </section>
 
-    <section class="tw-relative tw-w-full tw-flex 
-                    tw-flex-col
-                    tw-place-content-center 
-                    tw-px-[10%]
-                    tw-h-[350px]
-                    tw-gap-[10%]
-                    tw-overflow-hidden
-                    tw-place-items-center
-                    tw-bg-[#F9EC8B]
-                    ">
-                    <div class="tw-absolute tw-w-[1500px] tw-z-10 tw-overflow-hidden tw-inset-0">
-                        <img src="{% static './assets/images/landing/ks-doodle-bg-lg.png' %}" alt="Doodle Background" class="tw-w-full tw-h-full tw-object-cover tw-opacity-25">
-                    </div>
-
-        <div class="tw-w-full tw-place-content-center 
-                    tw-flex tw-flex-col tw-gap-3
-                    tw-place-items-center
-                    ">
-
-            <h2 class="tw-text-6xl max-md:tw-text-4xl tw-font-bold primary-text-color tw-uppercase">Treat yourself!</h2>
-            <h2 class="tw-text-3xl max-md:tw-text-2xl tw-mb-4">Place your order today</h2>
-            
-            <button class="tw-px-10 tw-py-3 tw-text-lg tw-font-semibold tw-text-white tw-bg-black tw-rounded-lg tw-shadow-lg hover:tw-bg-gray-800">
-                Order Now!
-            </button>
-        </div>
-
-    </section>
+{% include 'html/components/cta/cta.html' %}
 
     <div class="tw-fixed
                 tw-top-[50%] tw-translate-y-[-50%]
