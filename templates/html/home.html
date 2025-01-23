@@ -5,246 +5,323 @@
 
 {% block content %}
 
-    <section class="tw-w-full tw-min-h-[100vh]  tw-max-w-[100vw]
-                        tw-flex tw-flex-col tw-overflow-hidden tw-relative"
-                        id="hero-section"
-                        >
-            
-            <div class="tw-w-full tw-h-full tw-p-[5%]
-                        tw-place-content-center tw-min-h-[100vh]
-                        tw-justify-around tw-place-items-center
-                        tw-flex max-lg:tw-flex-col">
+<section id="hero-section" class="tw-w-full">
 
-                <div class="tw-flex tw-flex-col tw-place-content-center tw-max-w-[650px] tw-min-w-[550px] 
-                            max-md:tw-min-w-[300px]">
-                    <h1 class="tw-text-6xl tw-font-semibold tw-uppercase 
-                            tw-leading-normal max-md:tw-text-5xl max-md:tw-leading-[70px]">
-                        Supercharge your Django 
-                        apps with Templates 🚀
-                    </h1>
-                    <div class="tw-mt-5 tw-p-2 tw-text-justify max-md:tw-max-w-full">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi consequuntur provident, aperiam blanditiis quia quae fugit commodi aliquam fugiat earum repellendus impedit ex perspiciatis iste a, sint possimus cupiditate odio? Delectus, recusandae! Iure porro illum sint labore, expedita inventore sapiente fugit, consectetur totam nemo temporibus sunt eligendi, odio esse!
-                    </div>
-                    
-                    <a href="https://github.com/PaulleDemon/Django-website-template" 
-                                        class="btn tw-mt-5 tw-ml-auto 
-                                                tw-duration-[0.3s]
-                                                tw-transition-transform
-                                                hover:tw-translate-x-2
-                                                ">
-                        <span>Get started</span>
-                        <i class="bi bi-arrow-right"></i>
+    <div class="tw-flex tw-flex-col tw-text-center">
+        <h1 class="tw-text-4xl tw-font-normal tw-uppercase tw-mt-10">Knead Sweets</h1>
+        <p class="tw-text-xl tw-tracking-[.2rem] tw-text-light tw-mt-4 tw-uppercase">Chicago</p>
+        <p class="fancy-font tw-text-2xl tw-my-4">Where a little sweetness goes a long way</p>
+    </div>
+
+    <div class="tw-flex tw-flex-col tw-items-center tw-justify-center">
+        <!-- Button -->
+        <div class="tw-absolute tw-bottom-20 tw-left-1/2 tw-transform tw--translate-x-1/2 tw-z-10">
+            <button class="tw-px-6 tw-py-3 tw-text-lg tw-font-semibold tw-text-white tw-bg-black tw-rounded-lg tw-shadow-lg hover:tw-bg-gray-800">
+            Treat Yourself!
+            </button>
+        </div>
+        <!-- Gallery Items -->
+        <div class="tw-relative tw-w-full tw-h-[calc(100vh-280px)] tw-px-5 tw-overflow-hidden tw-z-0">
+            <div id="default-carousel" class="tw-relative tw-w-full tw-h-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="tw-relative tw-w-full tw-h-full tw-overflow-hidden tw-rounded-3xl">
+                <!-- Item 1 -->
+                <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                <img src="{% static './assets/images/home/ks-cakes-1.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                <img src="{% static './assets/images/home/ks-cakes-2.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                <img src="{% static './assets/images/home/ks-cakes-3.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                <img src="{% static './assets/images/home/ks-cakes-4.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="tw-duration-700 tw-ease-in-out" data-carousel-item>
+                <img src="{% static './assets/images/home/ks-cakes-5.png' %}" class="tw-absolute tw-block tw-w-full tw-h-full tw-object-cover tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="tw-absolute tw-z-30 tw-flex tw--translate-x-1/2 tw-bottom-5 tw-left-1/2 tw-space-x-3 rtl:tw-space-x-reverse">
+                <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="tw-absolute tw-top-0 tw-start-0 tw-z-30 tw-flex tw-items-center tw-justify-center tw-h-full tw-px-4 tw-cursor-pointer tw-group focus:tw-outline-none" data-carousel-prev>
+                <span class="tw-inline-flex tw-items-center tw-justify-center tw-w-10 tw-h-10 tw-rounded-full tw-bg-white/30 dark:tw-bg-gray-800/30 group-hover:tw-bg-white/50 dark:group-hover:tw-bg-gray-800/60 group-focus:tw-ring-4 group-focus:tw-ring-white dark:group-focus:tw-ring-gray-800/70 group-focus:tw-outline-none">
+                <svg class="tw-w-4 tw-h-4 tw-text-white dark:tw-text-gray-800 rtl:tw-rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="tw-sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="tw-absolute tw-top-0 tw-end-0 tw-z-30 tw-flex tw-items-center tw-justify-center tw-h-full tw-px-4 tw-cursor-pointer tw-group focus:tw-outline-none" data-carousel-next>
+                <span class="tw-inline-flex tw-items-center tw-justify-center tw-w-10 tw-h-10 tw-rounded-full tw-bg-white/30 dark:tw-bg-gray-800/30 group-hover:tw-bg-white/50 dark:group-hover:tw-bg-gray-800/60 group-focus:tw-ring-4 group-focus:tw-ring-white dark:group-focus:tw-ring-gray-800/70 group-focus:tw-outline-none">
+                <svg class="tw-w-4 tw-h-4 tw-text-white dark:tw-text-gray-800 rtl:tw-rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="tw-sr-only">Next</span>
+                </span>
+            </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tw-w-full  tw-max-w-[100vw]
+                tw-flex tw-flex-col tw-overflow-hidden tw-relative 
+                tw-place-items-center
+                tw-place-content-center
+                tw-mt-4 tw-py-6
+                "
+                >
+    <div id="accordion-flush" data-accordion="collapse" data-active-classes="tw-bg-black tw-text-white" data-inactive-classes="tw-bg-gray-900 tw-text-gray-100" class="tw-w-full">
+
+        <!-- Accordion Item 1 -->
+        <h2 id="accordion-flush-heading-1" class="tw-relative">
+            <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-py-5 tw-px-4 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border-b tw-border-gray-200 tw-gap-3" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+            <p class="tw-text-3xl tw-uppercase">Weddings</p>
+            <svg data-accordion-icon class="tw-w-3 tw-h-3 rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+            </svg>
+            <div class="tw-absolute tw-w-full tw-z-0 tw-overflow-hidden tw-inset-0">
+                <img src="{% static './assets/images/home/ks-doodle-bg-sm-white.png' %}" alt="Doodle Background" class="tw-w-full tw-h-full tw-object-cover tw-opacity-25">
+            </div>
+        </button>
+        </h2>
+        <div id="accordion-flush-body-1" class="hidden tw-bg-black" aria-labelledby="accordion-flush-heading-1">
+            <div class="tw-p-0">
+                <img src="{% static 'assets/images/home/ks-cakes-1.png' %}" alt="Weddings" class="tw-w-full tw-h-[450px] tw-object-cover">
+            </div>
+            <div class="tw-p-5 tw-border-b tw-border-white tw-items-center">
+                <p class="tw-mb-4 tw-text-white tw-text-center">Elegant and custom-designed wedding cakes to make your special day unforgettable. Crafted with precision and tailored to your vision.</p>
+                <div class="tw-flex tw-justify-center">
+                    <a href="#" class="tw-px-8 tw-py-2 tw-text-lg tw-font-semibold tw-text-black tw-bg-white tw-rounded-lg">
+                        See more!
                     </a>
                 </div>
-
-                <div class="tw-max-w-[750px] 
-                            tw-place-content-center
-                            tw-place-items-center
-                            tw max-md:!tw-mt-10">
-                    <div class="tw-rounded-lg tw-overflow-clip tw-shadow-xl ">
-                        <img src="{% static './assets/images/home/dashboard.png' %}" 
-                                alt="dashboard" class="tw-w-full tw-h-full">
-                    </div>
-                    <div class="tw-mt-5 tw-p-2 tw-text-justify tw-text-2xl">
-                        Code Less. Deliver More
-                    </div>
-                </div>
-
             </div>
-        
-    </section>
-
-
-    <section class="tw-w-full  tw-max-w-[100vw]
-                    tw-flex tw-flex-col tw-overflow-hidden tw-relative 
-                    tw-place-items-center
-                    tw-place-content-center
-                    tw-p-6
-                    "
-                    >
-
-        <h2 class="tw-text-5xl max-md:tw-text-3xl">Features made for perfect delivery</h2>
-
-        <div class="tw-flex max-lg:tw-flex-col tw-w-full tw-gap-8 
-                    tw-place-content-center tw-mt-10 tw-p-4
-                    tw-place-items-center
-                    ">
-
-            <div class="tw-w-[250px] tw-h-[250px] 
-                        tw-flex tw-flex-col tw-shadow-xl
-                        tw-rounded-lg
-                        tw-place-content-center tw-place-items-center
-                        ">
-                <i class="bi bi-cloud-upload-fill 
-                            tw-text-[#2c2a2a]
-                            tw-text-6xl"></i>
-                <h3 class="tw-text-xl tw-mt-5">Production ready</h2>
-            </div>   
-            <div class="tw-w-[250px] tw-h-[250px] 
-                        tw-flex tw-flex-col tw-shadow-xl
-                        tw-rounded-lg
-                        tw-place-content-center tw-place-items-center
-                        ">
-                <i class="bi bi-phone-fill 
-                        tw-text-[#2c2a2a]
-                            tw-text-6xl"></i>
-                <h3 class="tw-text-xl tw-text-center tw-mt-5">Responsive UI</h2>
-            </div>  
-            <div class="tw-w-[250px] tw-h-[250px] 
-                        tw-flex tw-flex-col tw-shadow-xl
-                        tw-rounded-lg
-                        tw-place-content-center tw-place-items-center
-                        ">
-                <i class="bi bi-database-fill 
-                        tw-text-[#2c2a2a]
-                            tw-text-6xl"></i>
-                <h3 class="tw-text-xl tw-text-center tw-mt-5">
-                    Postgres / Sqlite <br> Database
-                </h2>
-            </div>    
-
-            <div class="tw-w-[250px] tw-h-[250px] 
-                        tw-flex tw-flex-col tw-shadow-xl
-                        tw-rounded-lg
-                        tw-place-content-center tw-place-items-center
-                        ">
-                <i class="bi bi-google
-                        tw-text-[#2c2a2a]
-                            tw-text-6xl"></i>
-                <h3 class="tw-text-xl tw-text-center tw-mt-5">SEO optimization</h2>
-            </div>   
-
         </div>
 
-    </section>
-
-    <section class="tw-w-full tw-flex 
-                    tw-place-content-center 
-                    tw-px-[10%]
-                    tw-p-4
-                    tw-gap-[10%]
-                    tw-place-items-center
-                    max-md:tw-flex-col
-                    tw-overflow-hidden
-                    "
-                    >
-        <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-2">
-            <h3 class="tw-text-4xl max-md:tw-text-3xl">Make it yours</h3>
-            <a class="btn tw-mt-4 tw-rounded-xl hover:tw-scale-[1.05] tw-duration-[0.3s]"
-                href="https://github.com/PaulleDemon/Django-website-template"
-            >
-                Get now!
-            </a>
-        </div>
-    </section>
-
-    <section class="tw-mt-5 tw-w-full tw-flex tw-flex-col tw-p-[5%]
-                     tw-place-items-center">
-
-        <h2 class="tw-text-3xl max-md:tw-text-xl primary-text-color tw-font-medium">
-            What some of our clients say
+        <!-- Accordion Item 2 -->
+        <h2 id="accordion-flush-heading-2" class="tw-relative">
+            <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-py-5 tw-px-4 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border-b tw-border-gray-200 tw-gap-3" data-accordion-target="#accordion-flush-body-2" aria-expanded="true" aria-controls="accordion-flush-body-2">
+            <p class="tw-text-3xl tw-uppercase">Birthdays</p>
+            <svg data-accordion-icon class="tw-w-3 tw-h-3 rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+            </svg>
+            <div class="tw-absolute tw-w-full tw-z-0 tw-overflow-hidden tw-inset-0">
+                <img src="{% static './assets/images/home/ks-doodle-bg-sm-white.png' %}" alt="Doodle Background" class="tw-w-full tw-h-full tw-object-cover tw-opacity-25">
+            </div>
+        </button>
         </h2>
-        
-        <div class="tw-mt-[5%] tw-flex tw-w-full tw-place-content-center tw-gap-[5%]">
-
-            <div class="review-container tw-flex tw-flex-col">
-                <div class="tw-flex tw-h-[150px] tw-max-w-[550px]">
-                    <div class="slides fade tw-text-lg max-md:tw-text-base tw-text-justify">
-                        <q class="tw-italic tw-text-gray-600">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, culpa?
-                        </q>
-                        <div class="tw-mt-2 tw-text-yellow-400">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="tw-mt-3">- Trich B</p>
-                    </div>
-                
-                    <div class="slides fade tw-text-lg max-md:tw-text-base tw-text-justify">
-                        <q class="tw-italic tw-text-gray-600 ">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet aspernatur optio deleniti soluta atque esse explicabo suscipit totam repudiandae voluptate.
-                        </q>
-                        <div class="tw-mt-2 tw-text-yellow-400">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="tw-mt-3">- Bára Müllerová</p>
-                    </div>
-
-                    <div class="slides fade tw-text-lg max-md:tw-text-base tw-text-justify">
-                        
-                        <q class="tw-italic tw-text-gray-600 ">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ad.
-                        </q>
-                        <div class="tw-mt-2 tw-text-yellow-400">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="tw-mt-3">- Matt freeman</p>
-
-                    </div>
-                </div>
-              
-                <!-- Navigation dots -->
-                <div class="dots-container tw-mt-auto">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+        <div id="accordion-flush-body-2" class="hidden tw-bg-black" aria-labelledby="accordion-flush-heading-1">
+            <div class="tw-p-0">
+                <img src="{% static 'assets/images/home/ks-cakes-2.png' %}" alt="Weddings" class="tw-w-full tw-h-[450px] tw-object-cover">
+            </div>
+            <div class="tw-p-5 tw-border-b tw-border-white tw-items-center">
+                <p class="tw-mb-4 tw-text-white tw-text-center">Elegant and custom-designed wedding cakes to make your special day unforgettable. Crafted with precision and tailored to your vision.</p>
+                <div class="tw-flex tw-justify-center">
+                    <a href="#" class="tw-px-8 tw-py-2 tw-text-lg tw-font-semibold tw-text-black tw-bg-white tw-rounded-lg">
+                        See more!
+                    </a>
                 </div>
             </div>
         </div>
+        
+        <!-- Accordion Item 3 -->
+        <h2 id="accordion-flush-heading-3" class="tw-relative">
+            <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-py-5 tw-px-4 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border-b tw-border-gray-200 tw-gap-3" data-accordion-target="#accordion-flush-body-3" aria-expanded="true" aria-controls="accordion-flush-body-3">
+            <p class="tw-text-3xl tw-uppercase">Special Events</p>
+            <svg data-accordion-icon class="tw-w-3 tw-h-3 rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+            </svg>
+            <div class="tw-absolute tw-w-full tw-z-0 tw-overflow-hidden tw-inset-0">
+                <img src="{% static './assets/images/home/ks-doodle-bg-sm-white.png' %}" alt="Doodle Background" class="tw-w-full tw-h-full tw-object-cover tw-opacity-25">
+            </div>
+        </button>
+        </h2>
+        <div id="accordion-flush-body-3" class="hidden tw-bg-black" aria-labelledby="accordion-flush-heading-1">
+            <div class="tw-p-0">
+                <img src="{% static 'assets/images/home/ks-cakes-3.png' %}" alt="Weddings" class="tw-w-full tw-h-[450px] tw-object-cover">
+            </div>
+            <div class="tw-p-5 tw-border-b tw-border-white tw-items-center">
+                <p class="tw-mb-4 tw-text-white tw-text-center">Elegant and custom-designed wedding cakes to make your special day unforgettable. Crafted with precision and tailored to your vision.</p>
+                <div class="tw-flex tw-justify-center">
+                    <a href="#" class="tw-px-8 tw-py-2 tw-text-lg tw-font-semibold tw-text-black tw-bg-white tw-rounded-lg">
+                        See more!
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accordion Item 4 -->
+        <h2 id="accordion-flush-heading-4" class="tw-relative">
+            <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-py-5 tw-px-4 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border-b tw-border-gray-200 tw-gap-3" data-accordion-target="#accordion-flush-body-4" aria-expanded="true" aria-controls="accordion-flush-body-4">
+            <p class="tw-text-3xl tw-uppercase">Catering</p>
+            <svg data-accordion-icon class="tw-w-3 tw-h-3 rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+            </svg>
+            <div class="tw-absolute tw-w-full tw-z-0 tw-overflow-hidden tw-inset-0">
+                <img src="{% static './assets/images/home/ks-doodle-bg-sm-white.png' %}" alt="Doodle Background" class="tw-w-full tw-h-full tw-object-cover tw-opacity-25">
+            </div>
+        </button>
+        </h2>
+        <div id="accordion-flush-body-4" class="hidden tw-bg-black" aria-labelledby="accordion-flush-heading-1">
+            <div class="tw-p-0">
+                <img src="{% static 'assets/images/home/ks-cakes-4.png' %}" alt="Weddings" class="tw-w-full tw-h-[450px] tw-object-cover">
+            </div>
+            <div class="tw-p-5 tw-border-b tw-border-white tw-items-center">
+                <p class="tw-mb-4 tw-text-white tw-text-center">Elegant and custom-designed wedding cakes to make your special day unforgettable. Crafted with precision and tailored to your vision.</p>
+                <div class="tw-flex tw-justify-center">
+                    <a href="#" class="tw-px-8 tw-py-2 tw-text-lg tw-font-semibold tw-text-black tw-bg-white tw-rounded-lg">
+                        See more!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     
-       
-    </section>
 
-    <section class="tw-w-full tw-flex 
+<section class="tw-mt-5 tw-w-full tw-flex tw-flex-col tw-p-[5%] tw-place-items-center">
+
+    <div class="tw-w-full tw-flex tw-flex-col tw-place-content-center tw-gap-4 tw-mb-4">
+        <h2 class="tw-text-4xl max-md:tw-text-2xl primary-text-color tw-font-medium tw-text-center">
+            What Our Customers Are Saying
+        </h2>
+        <p class="tw-text-xl max-md:tw-text-lg tw-font-light tw-color-grey-300 tw-text-center tw-px-4">Read what our customers have to say about our products and services
+        </p>
+    </div>
+    
+    <div class="tw-mt-5 tw-flex tw-w-full tw-place-content-center tw-gap-[5%]">
+
+        <div class="review-container tw-flex tw-flex-col">
+            <div class="tw-flex tw-h-[300px] tw-max-w-[550px]">
+                <div class="slides fade tw-text-lg max-md:tw-text-base">
+                        <!-- Review Profile -->
+                    <div class="tw-flex tw-flex-col tw-place-items-center tw-place-content-center tw-gap-4">
+                        <div class="tw-w-28 tw-h-28 tw-rounded-full tw-overflow-hidden tw-my-4 tw-z-10 tw-flex tw-flex-col tw-place-items-center tw-place-content-center">
+                            <img src="{% static './assets/images/landing/ks-profile.png' %}" alt="Mayela Bezares" class="tw-w-full tw-h-full tw-object-cover">
+                        </div>
+                        <div class="tw-text-center">
+                            <h1 class="tw-text-lg tw-font-semibold">Mayela Bezares</h1>
+                            <p class="tw-text-sm tw-font-light tw-text-gray-500 tw-mb-4">CEO, Knead Sweets</p>
+                            <q class="tw-italic tw-text-gray-600 tw-mb-4">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, culpa?
+                            </q>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+                <div class="slides fade tw-text-lg max-md:tw-text-base">
+                    <!-- Review Profile -->
+                    <div class="tw-flex tw-flex-col tw-place-items-center tw-place-content-center tw-gap-4">
+                        <div class="tw-w-28 tw-h-28 tw-rounded-full tw-overflow-hidden tw-my-4 tw-z-10 tw-flex tw-flex-col tw-place-items-center tw-place-content-center">
+                            <img src="{% static './assets/images/landing/ks-profile.png' %}" alt="Mayela Bezares" class="tw-w-full tw-h-full tw-object-cover">
+                        </div>
+                        <div class="tw-text-center">
+                            <h1 class="tw-text-lg tw-font-semibold">Mayela Bezares</h1>
+                            <p class="tw-text-sm tw-font-light tw-text-gray-500 tw-mb-4">CEO, Knead Sweets</p>
+                            <q class="tw-italic tw-text-gray-600 tw-mb-4">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, culpa?
+                            </q>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="slides fade tw-text-lg max-md:tw-text-base">
+                <!-- Review Profile -->
+                <div class="tw-flex tw-flex-col tw-place-items-center tw-place-content-center tw-gap-4">
+                    <div class="tw-w-28 tw-h-28 tw-rounded-full tw-overflow-hidden tw-my-4 tw-z-10 tw-flex tw-flex-col tw-place-items-center tw-place-content-center">
+                        <img src="{% static './assets/images/landing/ks-profile.png' %}" alt="Mayela Bezares" class="tw-w-full tw-h-full tw-object-cover">
+                    </div>
+                    <div class="tw-text-center">
+                        <h1 class="tw-text-lg tw-font-semibold">Mayela Bezares</h1>
+                        <p class="tw-text-sm tw-font-light tw-text-gray-500 tw-mb-4">CEO, Knead Sweets</p>
+                        <q class="tw-italic tw-text-gray-600 tw-mb-4">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, culpa?
+                        </q>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+            
+        <!-- Navigation dots -->
+        <div class="dots-container tw-mt-auto">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</section>
+
+<section class="tw-w-full tw-flex 
+                tw-place-content-center 
+                tw-px-[10%]
+                tw-p-4
+                tw-gap-[10%]
+                tw-place-items-center
+                max-md:tw-flex-col
+                tw-overflow-hidden
+                tw-h-[250px]
+                tw-bg-black
+                tw-text-white
+                "
+                >
+    <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-2">
+        <h3 class="tw-text-4xl max-md:tw-text-3xl tw-mb-4">Follow our story!</h3>
+        <div class="tw-flex tw-gap-6 tw-mb-4 tw-text-3xl">
+            <a href="https://www.facebook.com/kneadsweetsbymayela" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/kneadsweetschicago" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://wa.me/17874690979" aria-label="WhatsApp">
+               <i class="bi bi-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <section class="tw-relative tw-w-full tw-flex 
                     tw-flex-col
                     tw-place-content-center 
                     tw-px-[10%]
-                   
+                    tw-h-[350px]
                     tw-gap-[10%]
+                    tw-overflow-hidden
                     tw-place-items-center
+                    tw-bg-[#F9EC8B]
                     ">
+                    <div class="tw-absolute tw-w-[1500px] tw-z-10 tw-overflow-hidden tw-inset-0">
+                        <img src="{% static './assets/images/landing/ks-doodle-bg-lg.png' %}" alt="Doodle Background" class="tw-w-full tw-h-full tw-object-cover tw-opacity-25">
+                    </div>
 
         <div class="tw-w-full tw-place-content-center 
                     tw-flex tw-flex-col tw-gap-3
                     tw-place-items-center
                     ">
 
-            <h2 class="tw-text-3xl max-md:tw-text-2xl primary-text-color">Special Newsletter signup</h2>
-            <h2 class="tw-text-xl max-md:tw-text-lg">Get to know about our future templates</h2>
+            <h2 class="tw-text-6xl max-md:tw-text-4xl tw-font-bold primary-text-color tw-uppercase">Treat yourself!</h2>
+            <h2 class="tw-text-3xl max-md:tw-text-2xl tw-mb-4">Place your order today</h2>
             
-            {% comment %} {% include "html/newsletter/form.html" %} {% endcomment %}
-
-            <div class="input tw-flex tw-h-[50px]  tw-p-2 
-                            tw-overflow-hidden tw-place-items-center ">
-                            
-                <input type="email" class="tw-w-full tw-h-full tw-bg-transparent tw-outline-none tw-px-3"
-                        placeholder="email"
-                        name="email"
-                        required
-                    >
-                
-                <button class="btn tw-h-[35px] 
-                            
-                            tw-duration-[0.3s]
-                            tw-transition-colors
-                            " 
-                            type="submit"
-                            >
-                    Signup
-                </button>   
-            </div>
+            <button class="tw-px-10 tw-py-3 tw-text-lg tw-font-semibold tw-text-white tw-bg-black tw-rounded-lg tw-shadow-lg hover:tw-bg-gray-800">
+                Order Now!
+            </button>
         </div>
 
     </section>
@@ -257,7 +334,6 @@
                 tw-z-40
                 tw-p-3
                 tw-hidden
-                tw-flex 
                 tw-flex-col
                 tw-rounded-md
                 tw-shadow-2xl
