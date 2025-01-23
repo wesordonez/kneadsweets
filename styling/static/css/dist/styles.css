@@ -5499,6 +5499,16 @@ input[type="range"]::-ms-fill-lower{
   padding-bottom:1rem
 }
 
+.tw-px-16{
+  padding-left:4rem;
+  padding-right:4rem
+}
+
+.tw-px-10{
+  padding-left:2.5rem;
+  padding-right:2.5rem
+}
+
 .tw-text-center{
   text-align:center
 }
@@ -5549,6 +5559,11 @@ input[type="range"]::-ms-fill-lower{
 .tw-text-xl{
   font-size:1.25rem;
   line-height:1.75rem
+}
+
+.tw-text-6xl{
+  font-size:3.75rem;
+  line-height:1
 }
 
 .tw-font-bold{
@@ -5632,6 +5647,10 @@ input[type="range"]::-ms-fill-lower{
 .tw-text-yellow-400{
   --tw-text-opacity:1;
   color:rgb(227 160 8 / var(--tw-text-opacity, 1))
+}
+
+.tw-opacity-25{
+  opacity:0.25
 }
 
 .tw-shadow-2xl{
@@ -5837,6 +5856,11 @@ input[type="range"]::-ms-fill-lower{
   .max-md\:tw-text-sm{
     font-size:0.875rem;
     line-height:1.25rem
+  }
+
+  .max-md\:tw-text-4xl{
+    font-size:2.25rem;
+    line-height:2.5rem
   }
 
   .max-md\:tw-opacity-0{
