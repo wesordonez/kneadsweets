@@ -5373,6 +5373,11 @@ input[type="range"]::-ms-fill-lower{
   background-color:rgb(249 236 139 / var(--tw-bg-opacity, 1))
 }
 
+.tw-bg-gray-900{
+  --tw-bg-opacity:1;
+  background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))
+}
+
 .tw-bg-gradient-to-b{
   background-image:linear-gradient(to bottom, var(--tw-gradient-stops))
 }
@@ -5647,6 +5652,11 @@ input[type="range"]::-ms-fill-lower{
 .tw-text-yellow-400{
   --tw-text-opacity:1;
   color:rgb(227 160 8 / var(--tw-text-opacity, 1))
+}
+
+.tw-text-gray-100{
+  --tw-text-opacity:1;
+  color:rgb(243 244 246 / var(--tw-text-opacity, 1))
 }
 
 .tw-opacity-25{
