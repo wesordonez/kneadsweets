@@ -4893,6 +4893,10 @@ input[type="range"]::-ms-fill-lower{
   margin-top:auto
 }
 
+.tw-mb-2{
+  margin-bottom:0.5rem
+}
+
 .tw-block{
   display:block
 }
@@ -5073,6 +5077,14 @@ input[type="range"]::-ms-fill-lower{
 .tw-w-max{
   width:-moz-max-content;
   width:max-content
+}
+
+.tw-w-\[250px\]{
+  width:250px
+}
+
+.tw-w-\[300px\]{
+  width:300px
 }
 
 .tw-min-w-\[10\%\]{
