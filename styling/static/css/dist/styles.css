@@ -4994,6 +4994,10 @@ input[type="range"]::-ms-fill-lower{
   height:300px
 }
 
+.tw-h-\[350px\]{
+  height:350px
+}
+
 .tw-max-h-\[150px\]{
   max-height:150px
 }
