@@ -5,6 +5,45 @@
 
 {% block content %}
 
+<section class="tw-bg-gray-100 tw-text-center tw-p-6 tw-space-y-8 tw-mt-10">
+    <!-- Title -->
+    <div class="tw-space-y-2">
+      <h1 class="tw-text-3xl tw-font-bold tw-tracking-tight tw-leading-snug">
+        Delectably flavorful, <br />
+        artfully crafted
+      </h1>
+    </div>
+  
+    <!-- Icons with Links -->
+    <div class="tw-flex tw-justify-center tw-gap-6">
+      <!-- Wedding -->
+      <a href="#wedding" class="tw-flex tw-flex-col tw-items-center tw-space-y-2 tw-group">
+        <img src="path-to-wedding-icon.svg" alt="Wedding" class="tw-w-12 tw-h-12 tw-group-hover:tw-opacity-80" />
+        <span class="tw-text-sm tw-font-medium tw-text-gray-800">Wedding</span>
+      </a>
+      <!-- Birthday -->
+      <a href="#birthday" class="tw-flex tw-flex-col tw-items-center tw-space-y-2 tw-group">
+        <img src="path-to-birthday-icon.svg" alt="Birthday" class="tw-w-12 tw-h-12 tw-group-hover:tw-opacity-80" />
+        <span class="tw-text-sm tw-font-medium tw-text-gray-800">Birthday</span>
+      </a>
+      <!-- Pastries -->
+      <a href="#pastries" class="tw-flex tw-flex-col tw-items-center tw-space-y-2 tw-group">
+        <img src="path-to-pastries-icon.svg" alt="Pastries" class="tw-w-12 tw-h-12 tw-group-hover:tw-opacity-80" />
+        <span class="tw-text-sm tw-font-medium tw-text-gray-800">Pastries</span>
+      </a>
+      <!-- Flavors -->
+      <a href="#flavors" class="tw-flex tw-flex-col tw-items-center tw-space-y-2 tw-group">
+        <img src="path-to-flavors-icon.svg" alt="Flavors" class="tw-w-12 tw-h-12 tw-group-hover:tw-opacity-80" />
+        <span class="tw-text-sm tw-font-medium tw-text-gray-800">Flavors</span>
+      </a>
+    </div>
+  
+    <!-- Subheading -->
+    <div class="tw-text-base tw-font-medium tw-text-gray-600">
+      <p>We have cakes and pastries for every occasion</p>
+    </div>
+  </section>
+
 {% include './html/components/cta/cta.html' %}
 
 {% endblock content %}
