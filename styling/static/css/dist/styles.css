@@ -4897,6 +4897,10 @@ input[type="range"]::-ms-fill-lower{
   margin-top:auto
 }
 
+.tw-mb-6{
+  margin-bottom:1.5rem
+}
+
 .tw-block{
   display:block
 }
@@ -5175,6 +5179,18 @@ input[type="range"]::-ms-fill-lower{
 
 .tw-resize-y{
   resize:vertical
+}
+
+.tw-list-inside{
+  list-style-position:inside
+}
+
+.tw-list-outside{
+  list-style-position:outside
+}
+
+.tw-list-disc{
+  list-style-type:disc
 }
 
 .tw-grid-cols-1{
@@ -5643,6 +5659,11 @@ input[type="range"]::-ms-fill-lower{
 .tw-text-gray-800{
   --tw-text-opacity:1;
   color:rgb(31 41 55 / var(--tw-text-opacity, 1))
+}
+
+.tw-text-gray-700{
+  --tw-text-opacity:1;
+  color:rgb(55 65 81 / var(--tw-text-opacity, 1))
 }
 
 .tw-opacity-25{
