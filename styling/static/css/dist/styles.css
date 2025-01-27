@@ -5002,6 +5002,10 @@ input[type="range"]::-ms-fill-lower{
   height:auto
 }
 
+.tw-h-\[120px\]{
+  height:120px
+}
+
 .tw-max-h-\[150px\]{
   max-height:150px
 }
@@ -5199,6 +5203,10 @@ input[type="range"]::-ms-fill-lower{
 
 .tw-grid-cols-5{
   grid-template-columns:repeat(5, minmax(0, 1fr))
+}
+
+.tw-grid-cols-3{
+  grid-template-columns:repeat(3, minmax(0, 1fr))
 }
 
 .tw-flex-col{
