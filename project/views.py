@@ -34,3 +34,6 @@ def landing_view(request):
 
 def about_view(request):
     return render(request, 'about.html', status=200)
+
+def services_view(request):
+    return render(request, 'services.html', status=200)
