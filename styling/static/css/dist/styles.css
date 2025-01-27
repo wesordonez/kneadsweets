@@ -5366,6 +5366,11 @@ input[type="range"]::-ms-fill-lower{
   background-color:rgb(255 255 255 / 0.3)
 }
 
+.tw-bg-\[\#f9ec8b\]{
+  --tw-bg-opacity:1;
+  background-color:rgb(249 236 139 / var(--tw-bg-opacity, 1))
+}
+
 .tw-bg-gradient-to-b{
   background-image:linear-gradient(to bottom, var(--tw-gradient-stops))
 }
