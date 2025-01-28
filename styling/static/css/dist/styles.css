@@ -5167,6 +5167,14 @@ input[type="range"]::-ms-fill-lower{
   max-width:100%
 }
 
+.tw-max-w-\[500px\]{
+  max-width:500px
+}
+
+.tw-max-w-\[650px\]{
+  max-width:650px
+}
+
 .tw-shrink-0{
   flex-shrink:0
 }
@@ -5534,6 +5542,21 @@ input[type="range"]::-ms-fill-lower{
 .tw-py-6{
   padding-top:1.5rem;
   padding-bottom:1.5rem
+}
+
+.tw-px-\[20\%\]{
+  padding-left:20%;
+  padding-right:20%
+}
+
+.tw-px-\[35\%\]{
+  padding-left:35%;
+  padding-right:35%
+}
+
+.tw-px-\[30\%\]{
+  padding-left:30%;
+  padding-right:30%
 }
 
 .tw-pl-8{
