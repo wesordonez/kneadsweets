@@ -5885,6 +5885,10 @@ input[type="range"]::-ms-fill-lower{
 }
 
 @media not all and (min-width: 768px){
+  .max-md\:tw-hidden{
+    display:none
+  }
+
   .max-md\:tw-w-\[350px\]{
     width:350px
   }
@@ -5941,6 +5945,14 @@ input[type="range"]::-ms-fill-lower{
 }
 
 @media not all and (min-width: 640px){
+  .max-sm\:tw-block{
+    display:block
+  }
+
+  .max-sm\:tw-hidden{
+    display:none
+  }
+
   .max-sm\:tw-rounded-full{
     border-radius:9999px
   }

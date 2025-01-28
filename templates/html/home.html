@@ -76,11 +76,35 @@
     </div>
 </section>
 
+<section id="landing-services" class="tw-bg-black tw-text-white tw-py-10 tw-mt-4 max-sm:tw-hidden">
+    <div class="tw-container tw-mx-auto tw-px-4">
+        <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-8">
+            <div class="tw-flex tw-flex-col tw-items-center">
+                <h2 class="fancy-font tw-text-5xl tw-mb-4 tw-font-semibold">Wedding Cakes</h2>
+                <img src="{% static './assets/images/landing/ks-cakes-1.png' %}" alt="Wedding Cakes" class="tw-h-[420px] tw-w-[300px] tw-object-cover tw-mb-4 tw-rounded-2xl" loading="lazy">
+                <p class="tw-text-center tw-px-4 tw-mt-2">Elegant and custom-designed wedding cakes to make your special day unforgettable. Crafted with precision and tailored to your vision.</p>
+            </div>
+            <div class="tw-flex tw-flex-col tw-items-center">
+                <h2 class="fancy-font tw-text-5xl tw-mb-4 tw-font-semibold">Birthday Cakes</h2>
+                <img src="{% static './assets/images/landing/ks-birthday-cakes.png' %}" alt="Pastries" class="tw-h-[420px] tw-w-[300px] tw-object-cover tw-mb-4 tw-rounded-2xl" loading="lazy">
+                <p class="tw-text-center tw-px-4 tw-mt-2">Celebrate every milestone with delightful, personalized birthday cakes that taste as good as they look.</p>
+            </div>
+            <div class="tw-flex tw-flex-col tw-items-center">
+                <h2 class="fancy-font tw-text-5xl tw-mb-4 tw-font-semibold">Pastries</h2>
+                <img src="{% static './assets/images/landing/ks-pastries.png' %}" alt="Special Orders" class="tw-h-[420px] tw-w-[300px] tw-object-cover tw-mb-4 tw-rounded-2xl" loading="lazy">
+                <p class="tw-text-center tw-px-4 tw-mt-2">A curated selection of gourmet desserts and pastries, perfect for events, gatherings, or simply indulging in sweet moments.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
 <section class="tw-w-full  tw-max-w-[100vw]
                 tw-flex tw-flex-col tw-overflow-hidden tw-relative 
                 tw-place-items-center
                 tw-place-content-center
                 tw-mt-4 tw-py-6
+                max-sm:tw-block tw-hidden
                 "
                 >
     <div id="accordion-flush" data-accordion="collapse" data-active-classes="tw-bg-black tw-text-white" data-inactive-classes="tw-bg-gray-900 tw-text-gray-100" class="tw-w-full">
