@@ -5536,6 +5536,22 @@ input[type="range"]::-ms-fill-lower{
   padding-bottom:1.5rem
 }
 
+.tw-pl-8{
+  padding-left:2rem
+}
+
+.tw-pl-10{
+  padding-left:2.5rem
+}
+
+.tw-pl-1{
+  padding-left:0.25rem
+}
+
+.tw-pl-20{
+  padding-left:5rem
+}
+
 .tw-text-center{
   text-align:center
 }
@@ -5801,6 +5817,10 @@ input[type="range"]::-ms-fill-lower{
     margin-top:50px
   }
 
+  .max-lg\:tw-ml-8{
+    margin-left:2rem
+  }
+
   .max-lg\:tw-w-full{
     width:100%
   }
@@ -5823,6 +5843,10 @@ input[type="range"]::-ms-fill-lower{
 
   .max-lg\:tw-gap-5{
     gap:1.25rem
+  }
+
+  .max-lg\:tw-pl-8{
+    padding-left:2rem
   }
 
   .max-lg\:\!tw-text-white{
@@ -5958,6 +5982,10 @@ input[type="range"]::-ms-fill-lower{
 
   .lg\:tw-place-items-center{
     place-items:center
+  }
+
+  .lg\:tw-justify-between{
+    justify-content:space-between
   }
 
   .lg\:tw-justify-around{
