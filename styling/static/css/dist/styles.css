@@ -4917,6 +4917,10 @@ input[type="range"]::-ms-fill-lower{
   margin-left:40%
 }
 
+.tw-mt-8{
+  margin-top:2rem
+}
+
 .tw-block{
   display:block
 }

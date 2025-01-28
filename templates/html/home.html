@@ -76,25 +76,61 @@
     </div>
 </section>
 
-<section id="landing-services" class="tw-bg-black tw-text-white tw-py-10 tw-mt-4 max-sm:tw-hidden">
+<section id="landing-services" class="tw-bg-black tw-text-white tw-py-10 tw-mt-10 max-sm:tw-hidden">
     <div class="tw-container tw-mx-auto tw-px-4">
         <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-8">
             <div class="tw-flex tw-flex-col tw-items-center">
                 <h2 class="fancy-font tw-text-5xl tw-mb-4 tw-font-semibold">Wedding Cakes</h2>
                 <img src="{% static './assets/images/landing/ks-cakes-1.png' %}" alt="Wedding Cakes" class="tw-h-[420px] tw-w-[300px] tw-object-cover tw-mb-4 tw-rounded-2xl" loading="lazy">
                 <p class="tw-text-center tw-px-4 tw-mt-2">Elegant and custom-designed wedding cakes to make your special day unforgettable. Crafted with precision and tailored to your vision.</p>
+                <div class="tw-flex tw-justify-center tw-mt-4">
+                    <a href="{% url 'services' %}#wedding" class="tw-px-8 tw-py-2 tw-text-lg tw-font-semibold tw-text-black tw-bg-white tw-rounded-lg">
+                        See more!
+                    </a>
+                </div>
             </div>
             <div class="tw-flex tw-flex-col tw-items-center">
                 <h2 class="fancy-font tw-text-5xl tw-mb-4 tw-font-semibold">Birthday Cakes</h2>
                 <img src="{% static './assets/images/landing/ks-birthday-cakes.png' %}" alt="Pastries" class="tw-h-[420px] tw-w-[300px] tw-object-cover tw-mb-4 tw-rounded-2xl" loading="lazy">
                 <p class="tw-text-center tw-px-4 tw-mt-2">Celebrate every milestone with delightful, personalized birthday cakes that taste as good as they look.</p>
+                <div class="tw-flex tw-justify-center tw-mt-4">
+                    <a href="{% url 'services' %}#birthday"  class="tw-px-8 tw-py-2 tw-text-lg tw-font-semibold tw-text-black tw-bg-white tw-rounded-lg">
+                        See more!
+                    </a>
+                </div>
             </div>
             <div class="tw-flex tw-flex-col tw-items-center">
                 <h2 class="fancy-font tw-text-5xl tw-mb-4 tw-font-semibold">Pastries</h2>
                 <img src="{% static './assets/images/landing/ks-pastries.png' %}" alt="Special Orders" class="tw-h-[420px] tw-w-[300px] tw-object-cover tw-mb-4 tw-rounded-2xl" loading="lazy">
                 <p class="tw-text-center tw-px-4 tw-mt-2">A curated selection of gourmet desserts and pastries, perfect for events, gatherings, or simply indulging in sweet moments.</p>
+                <div class="tw-flex tw-justify-center tw-mt-4">
+                    <a href="{% url 'services' %}#pastries"  class="tw-px-8 tw-py-2 tw-text-lg tw-font-semibold tw-text-black tw-bg-white tw-rounded-lg">
+                        See more!
+                    </a>
+                </div>
             </div>
         </div>
+        <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-8 tw-mt-8">
+            <div class="tw-flex tw-flex-col tw-items-center">
+                <h2 class="fancy-font tw-text-5xl tw-mb-4 tw-font-semibold">Special Events</h2>
+                <img src="{% static './assets/images/home/ks-cakes-3.png' %}" alt="Cupcakes" class="tw-h-[420px] tw-w-[300px] tw-object-cover tw-mb-4 tw-rounded-2xl" loading="lazy">
+                <p class="tw-text-center tw-px-4 tw-mt-2">Delicious and beautifully decorated treats for special events and catering, perfect for any occasion.</p>
+                <div class="tw-flex tw-justify-center tw-mt-4">
+                    <a href="{% url 'services' %}"  class="tw-px-8 tw-py-2 tw-text-lg tw-font-semibold tw-text-black tw-bg-white tw-rounded-lg">
+                        See more!
+                    </a>
+                </div>
+            </div>
+            <div class="tw-flex tw-flex-col tw-items-center">
+                <h2 class="fancy-font tw-text-5xl tw-mb-4 tw-font-semibold">Sweet Tables</h2>
+                <img src="{% static './assets/images/landing/ks-cupcakes-flower.png' %}" alt="Cookies" class="tw-h-[420px] tw-w-[300px] tw-object-cover tw-mb-4 tw-rounded-2xl" loading="lazy">
+                <p class="tw-text-center tw-px-4 tw-mt-2">Beautifully arranged sweet tables featuring an assortment of desserts, perfect for any celebration or event.</p>
+                <div class="tw-flex tw-justify-center tw-mt-4">
+                    <a href="{% url 'services' %}"  class="tw-px-8 tw-py-2 tw-text-lg tw-font-semibold tw-text-black tw-bg-white tw-rounded-lg">
+                        See more!
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
