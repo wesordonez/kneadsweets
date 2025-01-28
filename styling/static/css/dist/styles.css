@@ -5423,6 +5423,11 @@ input[type="range"]::-ms-fill-lower{
   background-color:rgb(255 255 255 / 0.3)
 }
 
+.tw-bg-\[\#000\]{
+  --tw-bg-opacity:1;
+  background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))
+}
+
 .tw-bg-gradient-to-b{
   background-image:linear-gradient(to bottom, var(--tw-gradient-stops))
 }
