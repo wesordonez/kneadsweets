@@ -5022,6 +5022,10 @@ input[type="range"]::-ms-fill-lower{
   height:100vh
 }
 
+.tw-h-\[420px\]{
+  height:420px
+}
+
 .tw-max-h-\[150px\]{
   max-height:150px
 }
@@ -5036,6 +5040,10 @@ input[type="range"]::-ms-fill-lower{
 
 .tw-max-h-\[450px\]{
   max-height:450px
+}
+
+.tw-max-h-\[420px\]{
+  max-height:420px
 }
 
 .tw-min-h-\[100vh\]{
