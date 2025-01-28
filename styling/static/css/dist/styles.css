@@ -4901,6 +4901,22 @@ input[type="range"]::-ms-fill-lower{
   margin-top:auto
 }
 
+.tw-ml-5{
+  margin-left:1.25rem
+}
+
+.tw-ml-\[50\%\]{
+  margin-left:50%
+}
+
+.tw-ml-\[45\%\]{
+  margin-left:45%
+}
+
+.tw-ml-\[40\%\]{
+  margin-left:40%
+}
+
 .tw-block{
   display:block
 }
