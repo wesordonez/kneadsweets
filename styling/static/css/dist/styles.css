@@ -5452,6 +5452,10 @@ input[type="range"]::-ms-fill-lower{
   background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))
 }
 
+.tw-bg-\[\#0000\]{
+  background-color:#0000
+}
+
 .tw-bg-gradient-to-b{
   background-image:linear-gradient(to bottom, var(--tw-gradient-stops))
 }
@@ -5758,6 +5762,11 @@ input[type="range"]::-ms-fill-lower{
 }
 
 .tw-text-white{
+  --tw-text-opacity:1;
+  color:rgb(255 255 255 / var(--tw-text-opacity, 1))
+}
+
+.tw-text-\[\#fff\]{
   --tw-text-opacity:1;
   color:rgb(255 255 255 / var(--tw-text-opacity, 1))
 }
