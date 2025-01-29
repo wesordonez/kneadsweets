@@ -4921,6 +4921,10 @@ input[type="range"]::-ms-fill-lower{
   margin-top:2rem
 }
 
+.tw-ml-1{
+  margin-left:0.25rem
+}
+
 .tw-block{
   display:block
 }
@@ -5179,6 +5183,10 @@ input[type="range"]::-ms-fill-lower{
   max-width:650px
 }
 
+.tw-max-w-md{
+  max-width:28rem
+}
+
 .tw-shrink-0{
   flex-shrink:0
 }
@@ -5255,6 +5263,14 @@ input[type="range"]::-ms-fill-lower{
 
 .tw-items-center{
   align-items:center
+}
+
+.tw-justify-start{
+  justify-content:flex-start
+}
+
+.tw-justify-end{
+  justify-content:flex-end
 }
 
 .tw-justify-center{
