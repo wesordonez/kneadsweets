@@ -5928,6 +5928,10 @@ input[type="range"]::-ms-fill-lower{
     height:120px
   }
 
+  .max-sm\:tw-w-\[1500px\]{
+    width:1500px
+  }
+
   .max-sm\:tw-rounded-full{
     border-radius:9999px
   }
@@ -5944,6 +5948,10 @@ input[type="range"]::-ms-fill-lower{
 }
 
 @media (min-width: 640px){
+  .sm\:tw-w-\[1500px\]{
+    width:1500px
+  }
+
   .sm\:tw-scale-150{
     --tw-scale-x:1.5;
     --tw-scale-y:1.5;
@@ -5992,6 +6000,10 @@ input[type="range"]::-ms-fill-lower{
 
   .lg\:tw-hidden{
     display:none
+  }
+
+  .lg\:tw-w-\[1500px\]{
+    width:1500px
   }
 
   .lg\:tw-flex-col{
