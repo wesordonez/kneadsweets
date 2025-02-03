@@ -187,8 +187,10 @@
                     tw-gap-6 tw-place-items-center max-md:tw-w-full">
             
             <div class="tw-flex tw-items-center tw-gap-4">
-                <img src="{% static "assets/logos/ks-logo-white.png" %}" 
-                    alt="logo" class="tw-max-w-[120px] max-md:tw-max-w-[80px]">
+                <a href="{% url 'home' %}">
+                    <img src="{% static "assets/logos/ks-logo-white.png" %}" 
+                        alt="logo" class="tw-max-w-[120px] max-md:tw-max-w-[80px]">
+                </a>
             </div>
             <div class="fancy-font tw-text-2xl">
                 Where a little sweetness goes a long way
