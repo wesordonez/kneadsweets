@@ -13,7 +13,7 @@ from django.urls import path
 from django.urls import path, include, re_path
 
 from .views import (rate_limiter_view, view_404, 
-                        handler_403, home_view, landing_view, about_view, services_view) #subscribe_view
+                        handler_403, home_view, landing_view, about_view, services_view, inquiry_form_view) #subscribe_view
 
 from .sitemaps import StaticSitemap
 from blog.sitemaps import BlogSitemap
@@ -46,6 +46,8 @@ urlpatterns = [
     # add new path here
     path('landing/', landing_view, name='landing'),
     path('services/', services_view, name='services'),
+    
+    path('contact/', inquiry_form_view, name='contact'),
 
     path('', home_view, name='home'),
     path('about/', about_view, name='about'),
