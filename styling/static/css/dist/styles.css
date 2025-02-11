@@ -5054,6 +5054,10 @@ input[type="range"]::-ms-fill-lower{
   min-height:100vh
 }
 
+.tw-min-h-\[2000px\]{
+  min-height:2000px
+}
+
 .tw-w-10{
   width:2.5rem
 }
