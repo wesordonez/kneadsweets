@@ -1,7 +1,6 @@
-# Django Web Dev Template (production ready)
-Use this template to speed up your Django development and deliver web-development projects as quickly as possible.
+# KneadSweets Chicago Official Website Source Code
 
-### What features does this Django template include?
+### What features does this source code include?
 - Production ready, you can immediately deploy this to Digital Ocean.
 - Comes with a landing, about us, blog, and contact page that you can modify.
 - Responsive design.
@@ -18,15 +17,11 @@ Use this template to speed up your Django development and deliver web-developmen
 
 ### Table of contents
 
-  - [What features does Django template include?](#what-features-does-django-template-include)
+- [What features does this source code include?](#what-features-does-this-source-code-include)
   
 - [Local development](#local-development)
-  - [Admin superuser](#admin-superuser)
-- [Customizing](#customizing)
-  - [Adding title, description to page](#adding-title-description-to-page)
+- [Troubleshooting](#troubleshooting)
 - [Deployment:](#deployment)
-    - [Create a firebase credential file](#create-a-firebase-credential-file)
-    - [Deploying credential file to production](#deploying-credential-file-to-production)
 - [Images credits](#images-credits)
 
 
@@ -82,7 +77,7 @@ Test the website works and the contact form successfully writes data to the crea
 
 9. To run Tailwind CSS open a new terminal and run:
 ```py
-npm install tailwindcss
+npm install tailwindcss@3.4
 npm install cross-env
 npm install postcss-simple-vars
 ```
@@ -100,6 +95,7 @@ Follow the prompts and test at: https:localhost:8000/admin/
 
 ## Trouble Shooting
 **Note:** If you are facing problems starting this program in windows OS, remove logging from project/settings.py
+**Note:** Taiwindcss is now at V4.0 which currently breaks the website. Use older version 3.4 instead.
 
 ## Customizing
 
@@ -135,55 +131,6 @@ To add scripts at the end of the elements
 ## Deployment:
 
 Follow Dunosis documentation to deploy to Digital Ocean App Platform using GitHub Actions. 
-
-Alternatively (with additional set up):
-
-Deploy to vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FPaulleDemon%2FDjango-website-template&demo-title=Django%20website%20template&demo-description=A%20starters%20template%20for%20django%20developers%2C%20freelancers%20and%20agencies&demo-url=https%3A%2F%2Fdjango-website-template.vercel.app%2F)
-
-or
-
-You can make use of Railway to deploy your own instance. 
-
-<a href="https://railway.app?referralCode=BfMDHP">
-  <img src="railway.png" alt="railway icon" height="50px"/>
-</a>
-
-Link to deploy to [Railway.app](https://railway.app?referralCode=BfMDHP)
-
-once you complete make sure to 
-```
-python manage.py collectstatic
-```
-and set
-```
-DEBUG=0
-```
-
-**Note:** don't forget to set the sites to your domain instead of example.com in the admin panel
-
-### Create a firebase credential file
-
->**Note:** We'll be using firebase for persistent storage, to upload user files. Firebase is pre-configured as there are other firebase services developers may want to use. <br><br> You can also use any of the storage supported by [django-storages](https://github.com/jschneier/django-storages), if you don't want to use firebase.
-
-To use Firebase
-
-1. We use Google storage for storing files. Go to firebase -> storage -> create (make it public)
-
-2. Now Go to firebase -> project settings -> service account -> Generate new private key.
-
-Rename the private as `firebase-cred.json`
-
-Use this private file as your credential file.
-
-#### Deploying credential file to production
-Sometimes your cloud provider may not provide you with storage for secret files. 
-So convert the credential file to base64 using
-```
-base64 firebase-cred.json > encoded.txt
-```
-Now copy the contents of encoded.txt and paste it in `FIREBASE_ENCODED="wedde"` variable
 
 ## Credits
 This template was based heavily on the following template by PaulleDemon
