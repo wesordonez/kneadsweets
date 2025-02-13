@@ -37,3 +37,6 @@ def about_view(request):
 
 def services_view(request):
     return render(request, 'services.html', status=200)
+
+def inquiry_form_view(request):
+    return render(request, 'inquiry/inquiry-form.html', status=200)
